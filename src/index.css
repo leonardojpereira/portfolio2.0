@@ -12,3 +12,7 @@ h1 {
   letter-spacing: -0.025em;
   font-weight: 300;
 }
+
+body {
+  background-image: url(./images//bg.png);
+}

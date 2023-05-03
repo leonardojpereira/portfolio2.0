@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
     padding: 10em 0 10em 0;
     text-align: left;
+    background-color: #fff;
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: #ddd;
 `;
 
 export const Container = styled.div`
