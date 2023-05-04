@@ -26,6 +26,7 @@ export const Row = styled.div`
     @media screen and (max-width: 1120px) {
         flex-wrap: wrap;
         justify-content: center;
+
     }
 `;
 
@@ -56,6 +57,11 @@ justify-content: center;
 flex-direction: column;
 width: 67%;
 gap: 20px;
+
+@media screen and (max-width: 1120px) {
+       text-align: center;
+       align-items: center;
+    }
 `;
 
 
