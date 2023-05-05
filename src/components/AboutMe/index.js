@@ -1,21 +1,19 @@
 import {
   AboutMeSection,
-  Title,
-  AfterContainer,
-  After,
-  Circle,
-  SecondAfter,
   Container,
   Row,
   AboutMeTextContainer,
   TitleAboutMe,
   Text,
-  CvLink,
+  ButtonContainer,
   SkillsContainer,
   TitleLevel,
   Grid,
 } from "./style";
 import SkillBar from "../SkillBar";
+
+import Button from "../Button";
+import Title from "../Title";
 
 export const skills = [
   { name: "HTML5", score: "90%" },
@@ -33,14 +31,7 @@ export const skills = [
 export default function AboutMe() {
   return (
     <AboutMeSection>
-      <header>
-        <Title>Sobre mim</Title>
-        <AfterContainer>
-          <After />
-          <Circle />
-          <SecondAfter />
-        </AfterContainer>
-      </header>
+        <Title children="Sobre mim"/>
       <Container>
         <Row>
           <AboutMeTextContainer>
@@ -58,7 +49,10 @@ export default function AboutMe() {
               Caso queira saber um pouco mais sobre mim, confira o meu currículo
               logo abaixo.
             </Text>
-            <CvLink href="#">Meu Currículo</CvLink>
+            <ButtonContainer>
+              <Button href="#">Meu currículo</Button>
+              <Button>Meus projetos</Button>
+            </ButtonContainer>
           </AboutMeTextContainer>
           <SkillsContainer>
             <TitleLevel>Meus conhecimentos</TitleLevel>

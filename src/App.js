@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import MyProjects from "./components/MyProjects";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Header/>
         <Home/>
         <AboutMe/>
+        <MyProjects/>
     </>
   );
 }

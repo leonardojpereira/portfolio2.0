@@ -7,42 +7,6 @@ export const AboutMeSection = styled.section`
   padding: 8em 2em;
 `;
 
-export const Title = styled.h2`
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const AfterContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  margin-top: 6px;
-`;
-
-export const After = styled.div`
-  width: 30px;
-  height: 3px;
-  border-radius: 12px;
-  background-color: #0083ff;
-`;
-
-export const Circle = styled.div`
-  width: 15px;
-  height: 15px;
-  background-color: #0083ff;
-  transform: rotate(45deg);
-`;
-
-export const SecondAfter = styled.div`
-  width: 30px;
-  height: 3px;
-  border-radius: 12px;
-  background-color: #0083ff;
-`;
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -88,27 +52,11 @@ export const Text = styled.p`
   margin-bottom: 22px;
 `;
 
-export const CvLink = styled.a`
-  transition: 0.4s ease-in-out;
-  position: relative;
-  display: inline-block;
-  color: #fff !important;
-  text-decoration: none;
-  font-weight: 700;
-  border: none;
-  outline: 0;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #0083ff;
-  padding: 0.8em 2em 0.8em 2em;
-  font-size: 1.1em;
-  width: 14em;
-  &:hover {
-    width: 15em;
-  }
+export const ButtonContainer = styled.div`
+ display: flex;
+ gap: 20px;
 `;
+
 
 export const SkillsContainer = styled.div`
   width: 40%;
