@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const TitleText = styled.h2`
   text-align: center;
@@ -14,6 +14,7 @@ export const AfterContainer = styled.div`
   align-items: center;
   gap: 6px;
   margin-top: 6px;
+  transform: perspective(500px);
 `;
 
 export const After = styled.div`
@@ -23,11 +24,20 @@ export const After = styled.div`
   background-color: #0083ff;
 `;
 
-export const Circle = styled.div`
+const rotate = keyframes`
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(405deg);
+  }
+`;
+
+export const Square = styled.div`
   width: 15px;
   height: 15px;
   background-color: #0083ff;
-  transform: rotate(45deg);
+  animation: ${rotate} 2s infinite;
 `;
 
 export const SecondAfter = styled.div`

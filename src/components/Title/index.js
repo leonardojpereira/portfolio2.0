@@ -1,4 +1,4 @@
-import { TitleText, AfterContainer, After, Circle, SecondAfter } from './style';
+import { TitleText, AfterContainer, After, Square, SecondAfter } from "./style";
 
 export default function Title({ children }) {
   return (
@@ -6,7 +6,7 @@ export default function Title({ children }) {
       <TitleText>{children}</TitleText>
       <AfterContainer>
         <After />
-        <Circle />
+        <Square />
         <SecondAfter />
       </AfterContainer>
     </header>
