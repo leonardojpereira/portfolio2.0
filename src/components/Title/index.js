@@ -1,9 +1,9 @@
 import { TitleText, AfterContainer, After, Square, SecondAfter } from "./style";
 
-export default function Title({ children }) {
+export default function Title({ children, color }) {
   return (
     <header>
-      <TitleText>{children}</TitleText>
+      <TitleText color>{children}</TitleText>
       <AfterContainer>
         <After />
         <Square />

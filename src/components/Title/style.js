@@ -6,6 +6,7 @@ export const TitleText = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ${props => props.color || "#000"};
 `;
 
 export const AfterContainer = styled.div`
