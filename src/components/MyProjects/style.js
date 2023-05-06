@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MyProjectsSection = styled.section`
-  background-image: url(images/bg.png);
   box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
     inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   padding: 8em 2em;
@@ -21,20 +20,27 @@ export const Row = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%;
-  margin: 5em 0;
+  margin: 5em 0px 3em 0;
 `;
 
 export const Box = styled.div`
-  background: #fff;
+  background-color: rgb(0, 131, 255);
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
     0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 12px;
 `;
+
 
 export const ProjectImageWrapper = styled.div`
   position: relative;
-  height: 60%;
+  height: 75%;
+  border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 `;
 
 export const ProjectImage = styled.img`
@@ -42,6 +48,8 @@ export const ProjectImage = styled.img`
   display: block;
   height: 100%;
   position: relative;
+  border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 `;
 
 export const ImageOverlay = styled.div`
@@ -56,22 +64,20 @@ export const ImageOverlay = styled.div`
   filter: "brightness(50%)";
   transition: opacity 0.5s ease-in-out;
   height: 100%;
+  border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 `;
 
-export const ArticleContainer = styled.article`
-  display: flex;
-  justify-content: center;
-  height: 140px;
-  position: relative;
-  padding-top: 22px;
-  padding: 12px;
-  display: Flex;
-  flex-direction: column;
-  gap: 22px;
-`;
 
 export const ProjectName = styled.h3`
-  font-size: 1.8em;
+  font-size: 1.5em;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgb(40, 40, 40);
 `;
 
 export const LinksContainer = styled.div`
@@ -101,6 +107,7 @@ export const GitHubLink = styled.a`
   background-color: rgb(41 41 41 / 75%);
   &:hover {
     transform: scale(1.1);
+    background-color: rgb(41 41 41);  
   }
 `;
 
@@ -111,12 +118,23 @@ export const Deploy = styled.a`
   background-color: rgb(41 41 41 / 75%);
   width: 60px;
   height: 60px;
-  font-size: 32px;
+  font-size: 28px;
   color: #fff;
   border-radius: 50%;
   transition: ease 0.4s;
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
+    background-color: rgb(41 41 41);
   }
+`;
+
+export const SeeMore = styled.span`
+color: #888;
+font-size: 1.5em;
+margin-bottom: 2em;
+transition: 0.4s ease;
+&:hover {
+  opacity: 0.8;
+}
 `;

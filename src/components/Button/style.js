@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const ButtonLink = styled.a`
   transition: 0.4s ease-in-out;
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff !important;
   text-decoration: none;
   font-weight: 700;
@@ -14,10 +16,10 @@ export const ButtonLink = styled.a`
   border-radius: 8px;
   overflow: hidden;
   background-color: #0083ff;
-  padding: 0.8em 2em 0.8em 2em;
-  font-size: 1.1em;
-  width: 14em;
+  height: ${props => props.height || '50px'};
+  font-size: ${props => props.fontSize || '1.1em'};
+  width: ${props => props.width || '14em'};
   &:hover {
-    width: 15em;
+    width: ${props => props.widthOnHover || '15em'};
   }
 `;

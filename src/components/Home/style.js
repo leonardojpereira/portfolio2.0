@@ -92,24 +92,3 @@ export const TextAboutMe = styled.p`
   line-height: 1.75em;
 `;
 
-export const ButtonAboutMe = styled.a`
-  transition: 0.4s ease-in-out;
-  position: relative;
-  display: inline-block;
-  color: #fff !important;
-  text-decoration: none;
-  font-weight: 700;
-  border: none;
-  outline: 0;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #0083ff;
-  padding: 1em 2.35em 1em 2.35em;
-  font-size: 1.1em;
-  max-width: 17em;
-  &:hover {
-    max-width: 18em;
-  }
-`;

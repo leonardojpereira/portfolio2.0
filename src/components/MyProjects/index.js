@@ -8,15 +8,14 @@ import {
   ProjectImageWrapper,
   ProjectImage,
   ImageOverlay,
-  ArticleContainer,
   ProjectName,
   LinksContainer,
   GitHubLink,
   Deploy,
+  SeeMore
 } from "./style";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { RiGithubLine } from "react-icons/ri";
-import Button from "../Button";
 
 import InfoGamesImage from "../../images/infogames.jpg";
 import SalesSystemImage from "../../images/salesystem.png";
@@ -24,6 +23,7 @@ import BlogAppImage from "../../images/blogapp.jpg";
 import CardPersonImage from "../../images/cardperson.png";
 import CreditCardImage from "../../images/creditcard.png";
 import BibleAppImage from "../../images/bible.jpg";
+import { ButtonLink } from "../Button/style";
 
 const projects = [
   {
@@ -80,12 +80,15 @@ function Project({ name, image, repository, deploy }) {
 
   return (
     <Box>
+       
       <ProjectImageWrapper
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <ProjectImage src={image} alt="Imagem do projeto" />
+   
         <ImageOverlay style={{ opacity: isHovering ? 0.8 : 0 }} />
+       
         {isHovering && (
           <LinksContainer>
             <GitHubLink target="blank" href={repository}>
@@ -96,10 +99,9 @@ function Project({ name, image, repository, deploy }) {
             </Deploy>
           </LinksContainer>
         )}
+      
       </ProjectImageWrapper>
-      <ArticleContainer>
-        <ProjectName>{name}</ProjectName>
-      </ArticleContainer>
+      <ProjectName>{name}</ProjectName>
     </Box>
   );
 }
@@ -120,7 +122,8 @@ export default function MyProjects() {
             />
           ))}
         </Row>
-        <Button href="#">Contate-me!</Button>
+        <SeeMore>Caso queira ver mais projetos meus, dê uma olhadinha no meu <a target="blank" href="https://github.com/leonardojpereira?tab=repositories">GitHub</a> :)</SeeMore>
+        <ButtonLink fontSize="1.3em" height="75px" width="16em" widthOnHover="17em" href="#">Contate-me!</ButtonLink>
       </Container>
     </MyProjectsSection>
   );

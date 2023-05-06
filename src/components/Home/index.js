@@ -1,4 +1,5 @@
 import ProfileImage from "../../images/profile.png";
+import { ButtonLink } from "../Button/style";
 import {
   HomeSection,
   Container,
@@ -10,12 +11,11 @@ import {
   Header,
   Title,
   TextAboutMe,
-  ButtonAboutMe,
 } from "./style";
 export default function Home() {
   return (
     <HomeSection>
-      <Container>
+      <Container> 
         <Row>
           <ImageContainer>
             <ImageFit>
@@ -32,7 +32,7 @@ export default function Home() {
               Sou um desenvolvedor <strong>Front-End</strong> e esse é o meu
               portfolio pessoal. Fique a vontade para explorá-lo!
             </TextAboutMe>
-            <ButtonAboutMe>Conheça mais sobre mim!</ButtonAboutMe>
+            <ButtonLink width="350px" height="70px" widthOnHover="21em">Conheça mais sobre mim!</ButtonLink>
           </Apresentation>
         </Row>
       </Container>
