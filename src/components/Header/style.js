@@ -7,6 +7,9 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 3.5em;
   background-color: #282828;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 `;
 
 export const Nav = styled.nav``;
