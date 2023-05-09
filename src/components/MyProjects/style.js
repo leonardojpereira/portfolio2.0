@@ -23,61 +23,77 @@ export const Row = styled.div`
   margin: 5em 0px 3em 0;
 `;
 
-export const Box = styled.div`
-  background-color: rgb(0, 131, 255);
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
-    0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  border-radius: 12px;
-`;
-
-
-export const ProjectImageWrapper = styled.div`
-  position: relative;
-  height: 75%;
-  border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-`;
-
 export const ProjectImage = styled.img`
-  width: 100%;
-  display: block;
-  height: 100%;
-  position: relative;
-  border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+width: 100%;
+height: 100%;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
 `;
 
 export const ImageOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+width: 100%;
+height: 100%;
+top: 0;
+right: -100%;
+color: #fff;
+position: absolute;
+background: #1f3d4738;
+backdrop-filter: blur(5px);
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: .6s;
+`;
+
+export const ImageContainer = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  height: 100%;
+  overflow: hidden;
+  display: flex;
   border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+border-top-right-radius: 12px;
+&:hover {
+  ${ImageOverlay} {
+    right: 0;
+  }
+}
 `;
 
 
-export const ProjectName = styled.h3`
-  font-size: 1.5em;
+export const BoxContainer = styled.div`
   height: 100%;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+`;
+
+export const Box = styled.div`
+width: 100%;
+height: 80%;
+position: relative;
+
+
+`;
+
+
+export const ProjectNameContainer = styled.div`
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: rgb(40, 40, 40);
+    color: #fff;
 `;
+
+export const ProjectName = styled.h3`
+  font-size: 1.5em;
+`;
+
 
 export const LinksContainer = styled.div`
   gap: 20px;

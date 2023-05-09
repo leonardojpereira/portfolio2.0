@@ -6,7 +6,7 @@ export const ContactMeSection = styled.section`
     text-shadow: -1px -1px 0px #181818;
     background-image: url(images/bg.png);
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    padding: 8em 0 8em 0;
+    padding: 8em 0 5em 0;
     text-align: center;
 `;
 

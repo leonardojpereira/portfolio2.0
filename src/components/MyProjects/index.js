@@ -1,18 +1,19 @@
-import { useState } from "react";
 import Title from "../Title";
 import {
   MyProjectsSection,
   Container,
   Row,
+  BoxContainer,
   Box,
-  ProjectImageWrapper,
+  ImageContainer,
   ProjectImage,
   ImageOverlay,
+  ProjectNameContainer,
   ProjectName,
   LinksContainer,
   GitHubLink,
   Deploy,
-  SeeMore
+  SeeMore,
 } from "./style";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { RiGithubLine } from "react-icons/ri";
@@ -69,41 +70,27 @@ const projects = [
 ];
 
 function Project({ name, image, repository, deploy }) {
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
-
   return (
-    <Box>
-       
-      <ProjectImageWrapper
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <ProjectImage src={image} alt="Imagem do projeto" />
-   
-        <ImageOverlay style={{ opacity: isHovering ? 0.8 : 0 }} />
-       
-        {isHovering && (
-          <LinksContainer>
-            <GitHubLink target="blank" href={repository}>
-              <RiGithubLine />
-            </GitHubLink>
-            <Deploy target="blank" href={deploy}>
-              <BsFillRocketTakeoffFill />
-            </Deploy>
-          </LinksContainer>
-        )}
-      
-      </ProjectImageWrapper>
-      <ProjectName>{name}</ProjectName>
-    </Box>
+    <BoxContainer>
+      <Box>
+        <ImageContainer>
+          <ProjectImage src={image} alt="Imagem do projeto" />
+          <ImageOverlay>
+            <LinksContainer>
+              <GitHubLink target="blank" href={repository}>
+                <RiGithubLine />
+              </GitHubLink>
+              <Deploy target="blank" href={deploy}>
+                <BsFillRocketTakeoffFill />
+              </Deploy>
+            </LinksContainer>
+          </ImageOverlay>
+        </ImageContainer>
+        <ProjectNameContainer>
+          <ProjectName>{name}</ProjectName>
+        </ProjectNameContainer>
+      </Box>
+    </BoxContainer>
   );
 }
 
@@ -123,8 +110,25 @@ export default function MyProjects() {
             />
           ))}
         </Row>
-        <SeeMore>Caso queira ver mais projetos meus, dê uma olhadinha no meu <ProfileLink target="blank" href="https://github.com/leonardojpereira?tab=repositories">GitHub</ProfileLink> :)</SeeMore>
-        <ButtonLink fontSize="1.3em" height="75px" width="16em" widthOnHover="17em" href="#">Fale comigo!</ButtonLink>
+        <SeeMore>
+          Caso queira ver mais projetos meus, dê uma olhadinha no meu{" "}
+          <ProfileLink
+            target="blank"
+            href="https://github.com/leonardojpereira?tab=repositories"
+          >
+            GitHub
+          </ProfileLink>{" "}
+          :)
+        </SeeMore>
+        <ButtonLink
+          fontSize="1.3em"
+          height="75px"
+          width="16em"
+          widthOnHover="17em"
+          href="#"
+        >
+          Fale comigo!
+        </ButtonLink>
       </Container>
     </MyProjectsSection>
   );
