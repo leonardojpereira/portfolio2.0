@@ -32,6 +32,7 @@ export const Row = styled.div`
     flex-wrap: wrap;
     box-sizing: border-box;
     align-items: stretch;
+    justify-content: center;
 
 `;
 
@@ -121,3 +122,8 @@ export const InputButton = styled.input`
     max-width: 24em;
     
 `;
+
+
+
+
+
