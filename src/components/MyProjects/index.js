@@ -24,6 +24,7 @@ import CardPersonImage from "../../images/cardperson.png";
 import CreditCardImage from "../../images/creditcard.png";
 import BibleAppImage from "../../images/bible.jpg";
 import { ButtonLink } from "../Button/style";
+import { ProfileLink } from "../Footer/style";
 
 const projects = [
   {
@@ -122,8 +123,8 @@ export default function MyProjects() {
             />
           ))}
         </Row>
-        <SeeMore>Caso queira ver mais projetos meus, dê uma olhadinha no meu <a target="blank" href="https://github.com/leonardojpereira?tab=repositories">GitHub</a> :)</SeeMore>
-        <ButtonLink fontSize="1.3em" height="75px" width="16em" widthOnHover="17em" href="#">Contate-me!</ButtonLink>
+        <SeeMore>Caso queira ver mais projetos meus, dê uma olhadinha no meu <ProfileLink target="blank" href="https://github.com/leonardojpereira?tab=repositories">GitHub</ProfileLink> :)</SeeMore>
+        <ButtonLink fontSize="1.3em" height="75px" width="16em" widthOnHover="17em" href="#">Fale comigo!</ButtonLink>
       </Container>
     </MyProjectsSection>
   );

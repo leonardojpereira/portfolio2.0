@@ -61,7 +61,6 @@ export const ImageOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
   opacity: 0;
-  filter: "brightness(50%)";
   transition: opacity 0.5s ease-in-out;
   height: 100%;
   border-top-left-radius: 12px;
