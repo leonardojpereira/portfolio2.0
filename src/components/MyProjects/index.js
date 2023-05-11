@@ -96,8 +96,8 @@ function Project({ name, image, repository, deploy }) {
 
 export default function MyProjects() {
   return (
-    <MyProjectsSection>
-      <Container>
+    <MyProjectsSection id="projects">
+      <Container data-aos="fade-up">
         <Title children="Meus projetos" />
         <Row>
           {projects.map((project) => (
@@ -125,7 +125,7 @@ export default function MyProjects() {
           height="75px"
           width="16em"
           widthOnHover="17em"
-          href="#"
+          href="#contact"
         >
           Fale comigo!
         </ButtonLink>

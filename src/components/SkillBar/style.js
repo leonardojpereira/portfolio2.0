@@ -1,32 +1,35 @@
 import styled from "styled-components";
 
 export const LevelContainer = styled.div`
-  width: 100%;
+  margin-bottom: 20px;
 `;
 
 export const ContainerSkill = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 `;
 
-export const Score = styled.span``;
+export const SkillName = styled.span`
+  font-weight: bold;
+`;
 
-export const SkillName = styled.span``;
+export const Score = styled.span`
+  font-size: 14px;
+  color: #777777;
+`;
 
 export const LevelBar = styled.div`
-  background-color: rgb(174 174 174);
-  max-width: 600px;
-  width: 100%;
-  height: 8px;
-  margin-top: 4px;
-  border-radius: 5px;
-  position: relative;
+  background-color: #e9ecef;
+  height: 6px;
+  border-radius: 10px;
 `;
 
 export const LevelBarScore = styled.div`
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 10px;
   width: ${(props) => props.width};
-  height: 8px;
-  border-radius: 5px;
-  background-color: #0083ff;
+  transition: width 1.5s ease-in-out; /* adicionado para animação */
+  width: ${(props) => (props.animationWidth ? props.animationWidth : props.width)}; /* adicionado para animação */
 `;

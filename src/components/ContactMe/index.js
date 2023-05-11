@@ -5,8 +5,8 @@ import { ContactMeSection, Container, Header, Subtitle, Row, Column, Form, FormR
 
 export default function ContactMe() {
     return (
-        <ContactMeSection>
-            <Container>
+        <ContactMeSection id="contact">
+            <Container data-aos="fade-up">
                 <Header>
                     <Title>Contate-me!</Title>
                     <Subtitle>Fique a vontade para me mandar uma mensagem :)</Subtitle>

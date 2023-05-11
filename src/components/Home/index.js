@@ -32,7 +32,7 @@ export default function Home() {
               Sou um desenvolvedor <strong>Front-End</strong> e esse é o meu
               portfolio pessoal. Fique a vontade para explorá-lo!
             </TextAboutMe>
-            <ButtonLink width="350px" height="70px" widthOnHover="21em">Conheça mais sobre mim!</ButtonLink>
+            <ButtonLink href="#aboutme" width="350px" height="70px" widthOnHover="21em">Conheça mais sobre mim!</ButtonLink>
           </Apresentation>
         </Row>
       </Container>

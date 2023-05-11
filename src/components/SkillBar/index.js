@@ -7,7 +7,7 @@ import {
   LevelBarScore,
 } from "./style";
 
-export default function SkillBar({ skill }) {
+export default function SkillBar({ skill, animationWidth }) {
   const { name, score } = skill;
 
   return (
@@ -17,7 +17,7 @@ export default function SkillBar({ skill }) {
         <Score>{score}</Score>
       </ContainerSkill>
       <LevelBar>
-        <LevelBarScore width={skill.score} />
+        <LevelBarScore width={skill.score} animationWidth={animationWidth} />
       </LevelBar>
     </LevelContainer>
   );

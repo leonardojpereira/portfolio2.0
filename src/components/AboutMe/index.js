@@ -1,3 +1,7 @@
+import { useInView } from "react-intersection-observer";
+import { CSSTransition } from "react-transition-group";
+import { useState } from "react";
+
 import {
   AboutMeSection,
   Container,
@@ -12,8 +16,10 @@ import {
 } from "./style";
 import SkillBar from "../SkillBar";
 
-import Button from "../Button";
+
+
 import Title from "../Title";
+import { ButtonLink } from "../Button/style";
 
 export const skills = [
   { name: "HTML5", score: "90%" },
@@ -29,12 +35,31 @@ export const skills = [
 ];
 
 export default function AboutMe() {
+
+  const [inView, setInView] = useState(false);
+
+  const getAnimationWidth = (score) => {
+    if (inView) {
+      return score;
+    }
+    return "0%";
+  };
+
+  const { ref } = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+    threshold: 0.3,
+    onChange: (inView) => {
+      setInView(inView);
+    },
+  });
+
   return (
-    <AboutMeSection>
-        <Title children="Sobre mim"/>
-      <Container>
+    <AboutMeSection id="aboutme" ref={ref} >
+      <Container data-aos="fade-right">
+        <Title children="Sobre mim" />
         <Row>
-          <AboutMeTextContainer>
+          <AboutMeTextContainer >
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
               Olá! Eu sou um estudante de Análise e Desenvolvimento de Sistemas
@@ -50,15 +75,25 @@ export default function AboutMe() {
               logo abaixo.
             </Text>
             <ButtonContainer>
-              <Button href="#">Meu currículo</Button>
-              <Button>Meus projetos</Button>
+              <ButtonLink target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing">Meu currículo</ButtonLink>
+              <ButtonLink href="#projects" >Meus projetos</ButtonLink>
             </ButtonContainer>
           </AboutMeTextContainer>
           <SkillsContainer>
             <TitleLevel>Meus conhecimentos</TitleLevel>
             <Grid>
-              {skills.map((skill) => (
-                <SkillBar skill={skill} />
+              {skills.map((skill, index) => (
+                <CSSTransition
+                  key={index}
+                  in={inView}
+                  timeout={500}
+                  classNames="skill-animation"
+                >
+                  <SkillBar
+                    skill={skill}
+                    animationWidth={getAnimationWidth(skill.score)}
+                  />
+                </CSSTransition>
               ))}
             </Grid>
           </SkillsContainer>

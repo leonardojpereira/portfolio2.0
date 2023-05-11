@@ -9,13 +9,13 @@ export default function Header() {
             <Link href="#">Home</Link>
           </List>
           <List>
-            <Link href="#">Sobre mim</Link>
+            <Link href="#aboutme">Sobre mim</Link>
           </List>
           <List>
-            <Link href="#">Projetos</Link>
+            <Link href="#projects">Projetos</Link>
           </List>
           <List>
-            <Link href="#">Contato</Link>
+            <Link href="#contact">Contato</Link>
           </List>
         </Ul>
       </Nav>
