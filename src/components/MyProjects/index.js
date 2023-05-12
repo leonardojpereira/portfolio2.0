@@ -126,6 +126,7 @@ export default function MyProjects() {
           width="16em"
           widthOnHover="17em"
           href="#contact"
+          fontSizeMobile="1em"
         >
           Fale comigo!
         </ButtonLink>

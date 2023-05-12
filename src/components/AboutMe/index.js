@@ -23,7 +23,7 @@ import { ButtonLink } from "../Button/style";
 
 export const skills = [
   { name: "HTML5", score: "90%" },
-  { name: "CSS3", score: "80%" },
+  { name: "CSS", score: "80%" },
   { name: "JavaScript", score: "75%" },
   { name: "NodeJS", score: "50%" },
   { name: "ReactJS", score: "75%" },

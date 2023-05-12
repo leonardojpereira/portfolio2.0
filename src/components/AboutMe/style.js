@@ -23,10 +23,17 @@ export const Row = styled.div`
   justify-content: center;
   margin: 5em 0;
   gap: 7em;
+  @media screen  and (max-width: 1200px) {
+    gap: 5em;
+    flex-direction: column;
+  }
 `;
 
 export const AboutMeTextContainer = styled.div`
   width: 60%;
+  @media screen  and (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const TitleAboutMe = styled.h3`
@@ -60,6 +67,9 @@ export const ButtonContainer = styled.div`
 
 export const SkillsContainer = styled.div`
   width: 40%;
+  @media screen  and (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const TitleLevel = styled.h3`
@@ -70,7 +80,6 @@ export const TitleLevel = styled.h3`
 
 export const Grid = styled.div`
   display: grid;
-  height: 100px;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 `;

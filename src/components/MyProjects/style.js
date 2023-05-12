@@ -21,6 +21,10 @@ export const Row = styled.div`
   gap: 32px;
   width: 100%;
   margin: 5em 0px 3em 0;
+  @media screen  and (max-width: 700px) {
+    font-size: 1.1em;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -63,7 +67,6 @@ border-top-right-radius: 12px;
 }
 `;
 
-
 export const BoxContainer = styled.div`
   height: 100%;
   border-top-left-radius: 12px;
@@ -74,10 +77,7 @@ export const Box = styled.div`
 width: 100%;
 height: 80%;
 position: relative;
-
-
 `;
-
 
 export const ProjectNameContainer = styled.div`
     height: 60px;
@@ -88,10 +88,20 @@ export const ProjectNameContainer = styled.div`
     border-bottom-right-radius: 12px;
     background-color: rgb(40, 40, 40);
     color: #fff;
-`;
+    @media screen  and (max-width: 1000px) {
+      height: 40px;
+  }
+  @media screen  and (max-width: 700px) {
+    height: 60px;
+  }
+`;  
 
 export const ProjectName = styled.h3`
   font-size: 1.5em;
+  @media screen  and (max-width: 1000px) {
+    font-size: 1.1em;
+  }
+ 
 `;
 
 
@@ -106,6 +116,7 @@ export const LinksContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  
 `;
 
 export const GitHubLink = styled.a`
@@ -149,6 +160,7 @@ color: #888;
 font-size: 1.5em;
 margin-bottom: 2em;
 transition: 0.4s ease;
+text-align: center;
 &:hover {
   opacity: 0.8;
 }

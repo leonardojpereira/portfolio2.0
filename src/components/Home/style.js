@@ -42,6 +42,14 @@ export const ImageFit = styled.div`
   height: 20em;
   margin: 0;
   background-color: #0083ff;
+  @media screen and (max-width: 540px) {
+    width: 17em;
+  height: 17em;
+  }
+  @media screen and (max-width: 420px) {
+    width: 15em;
+  height: 15em;
+  }
 `;
 
 export const Image = styled.img`
@@ -54,17 +62,12 @@ export const Apresentation = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 67%;
   gap: 20px;
 
   @media screen and (max-width: 1120px) {
     text-align: center;
     align-items: center;
   }
-`;
-
-export const Header = styled.header`
-  width: 660px;
 `;
 
 const typing = keyframes`
@@ -85,10 +88,38 @@ export const Title = styled.h1`
   overflow: hidden;
   border-right: 3px solid;
   animation: ${typing} 2s steps(19), ${blink} 0.5s step-end infinite alternate;
+  padding-right: 10px;
+  max-width: 650px;
+  padding-right: 6px;
+  @media screen and (max-width: 720px) {
+      font-size: 2.5em
+  }
+  @media screen and (max-width: 540px) {
+      font-size: 2em
+  }
+  @media screen and (max-width: 420px) {
+      font-size: 1.7em
+  }
+  @media screen and (max-width: 365px) {
+      font-size: 1.5em
+  }
+  
 `;
 
 export const TextAboutMe = styled.p`
   font-size: 1.5em;
   line-height: 1.75em;
+  @media screen and (max-width: 720px) {
+      font-size: 1.4em
+  }
+  @media screen and (max-width: 540px) {
+      font-size: 1.2em
+  }
+  @media screen and (max-width: 420px) {
+      font-size: 1.1em
+  }
+  @media screen and (max-width: 365px) {
+      font-size: 1em
+  }
 `;
 

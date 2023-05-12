@@ -97,12 +97,21 @@ export const ButtonContainer = styled.div`
 `;
 
 export const UlContainer = styled.ul`
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @media screen  and (max-width: 435px) {
+    width: 100%;
+  }
 `;
 
 export const Button = styled.li`
-        display: inline-block;
-        margin-left: 1em;
+    display: inline-block;
+    @media screen  and (max-width: 435px) {
+    width: 100%;
+  }
 `;
 
 export const InputButton = styled.input`
@@ -120,7 +129,10 @@ export const InputButton = styled.input`
     padding: 1em 2.35em 1em 2.35em;
     font-size: 1.1em;
     max-width: 24em;
-    
+    @media screen  and (max-width: 435px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 

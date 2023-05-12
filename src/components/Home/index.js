@@ -8,7 +8,6 @@ import {
   ImageFit,
   Image,
   Apresentation,
-  Header,
   Title,
   TextAboutMe,
 } from "./style";
@@ -23,11 +22,11 @@ export default function Home() {
             </ImageFit>
           </ImageContainer>
           <Apresentation>
-            <Header>
+            <header>
               <Title>
                 Olá. meu nome é <strong>Leonardo</strong>.
               </Title>
-            </Header>
+            </header>
             <TextAboutMe>
               Sou um desenvolvedor <strong>Front-End</strong> e esse é o meu
               portfolio pessoal. Fique a vontade para explorá-lo!
