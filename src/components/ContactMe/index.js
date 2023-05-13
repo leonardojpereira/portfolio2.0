@@ -4,6 +4,8 @@ import Title from "../Title";
 import { ContactMeSection, Container, Header, Subtitle, Row, Column, Form, FormRow, InputContainer, Input, TextArea, UlContainer, Button, InputButton } from './style';
 
 export default function ContactMe() {
+
+
     return (
         <ContactMeSection id="contact">
             <Container data-aos="fade-up">
@@ -37,7 +39,6 @@ export default function ContactMe() {
                                 </Column>
                             </FormRow>
                             <input type="hidden" name="accessKey" value="f5a871bb-75fb-40ef-9896-e51a7a61682f" />
-                            <input type="hidden" name="redirectTo" value="" />
                         </Form>
                     </Column>
                     <SocialMedia />

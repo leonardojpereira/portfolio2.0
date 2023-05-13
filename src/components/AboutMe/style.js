@@ -64,7 +64,6 @@ export const ButtonContainer = styled.div`
  gap: 20px;
 `;
 
-
 export const SkillsContainer = styled.div`
   width: 40%;
   @media screen  and (max-width: 1200px) {
@@ -82,6 +81,9 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+  @media screen  and (max-width: 500px) {
+  grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const SkillName = styled.span``;

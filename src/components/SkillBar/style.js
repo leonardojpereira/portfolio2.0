@@ -8,6 +8,7 @@ export const ContainerSkill = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: center;
 `;
 
 export const SkillName = styled.span`
@@ -26,7 +27,7 @@ export const LevelBar = styled.div`
 `;
 
 export const LevelBarScore = styled.div`
-  background-color: #007bff;
+  background-color: ${props => props.backgroundColor};
   height: 100%;
   border-radius: 10px;
   width: ${(props) => props.width};

@@ -22,16 +22,16 @@ import Title from "../Title";
 import { ButtonLink } from "../Button/style";
 
 export const skills = [
-  { name: "HTML5", score: "90%" },
-  { name: "CSS", score: "80%" },
-  { name: "JavaScript", score: "75%" },
-  { name: "NodeJS", score: "50%" },
-  { name: "ReactJS", score: "75%" },
-  { name: "NextJS", score: "60%" },
-  { name: "Styled-Components", score: "70%" },
-  { name: "SASS", score: "60%" },
-  { name: "REST API", score: "75%" },
-  { name: "Git", score: "80%" },
+  { name: "HTML5", score: "90%", color: "#ff6347" },
+  { name: "CSS", score: "80%", color: "#264de4" },
+  { name: "JavaScript", score: "75%", color: "#F0DB4F" },
+  { name: "NodeJS", score: "50%", color: "#3c873a" },
+  { name: "ReactJS", score: "75%", color: "#61dafb" },
+  { name: "NextJS", score: "60%", color: "#000" },
+  { name: "Styled-Components", score: "70%", color: "purple" },
+  { name: "SASS", score: "60%", color: "#cc6699" },
+  { name: "REST API", score: "75%", color: "cyan" },
+  { name: "Git", score: "80%", color: "#f34f29" },
 ];
 
 export default function AboutMe() {
@@ -75,8 +75,8 @@ export default function AboutMe() {
               logo abaixo.
             </Text>
             <ButtonContainer>
-              <ButtonLink target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing">Meu currículo</ButtonLink>
-              <ButtonLink href="#projects" >Meus projetos</ButtonLink>
+              <ButtonLink fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing">Meu currículo</ButtonLink>
+              <ButtonLink fontSizeMobile="0.9em" href="#projects" >Meus projetos</ButtonLink>
             </ButtonContainer>
           </AboutMeTextContainer>
           <SkillsContainer>

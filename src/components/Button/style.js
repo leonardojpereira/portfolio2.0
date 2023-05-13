@@ -27,6 +27,7 @@ export const ButtonLink = styled.a`
     font-size: ${props => props.fontSizeMobile || '1.1em'};
     &:hover {
       width: ${props => props.widthMobileHover || '14em'};
+      font-size: ${props => props.fontSizeMobile};;
     }
   }
 `;
