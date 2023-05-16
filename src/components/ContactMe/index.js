@@ -1,10 +1,49 @@
+import { useState } from "react";
 import Footer from "../Footer";
 import SocialMedia from "../SocialMedia";
 import Title from "../Title";
 import { ContactMeSection, Container, Header, Subtitle, Row, Column, Form, FormRow, InputContainer, Input, TextArea, UlContainer, Button, InputButton } from './style';
+import emailJS from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 export default function ContactMe() {
+    const [name, setName] = useState('');
+    const [subject, setSubject] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        const templateParans = {
+            from_name: name,
+            email: email,
+            subject: subject,
+            message: message
+        }
+
+        emailJS.send("service_hji6hvj", "template_d43uhi3", templateParans, "Spo-uQkYUz_EfELn0")
+            .then((response) => {
+                console.log("EMAIL ENVIADO", response.status, response.text);
+                setName('');
+                setEmail('');
+                setSubject('');
+                setMessage('');
+                toast.success("Mensagem enviada!");
+            }, (err) => {
+                console.log("ERROR:", err);
+                toast.error("Desculpe, não foi possível enviar a mensagem :/");
+            })
+
+    }
+
+    function handleClean() {
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    }
 
     return (
         <ContactMeSection id="contact">
@@ -15,17 +54,17 @@ export default function ContactMe() {
                 </Header>
                 <Row>
                     <Column>
-                        <Form action="https://api.staticforms.xyz/submit" method="post">
+                        <Form onSubmit={sendEmail}>
                             <FormRow>
                                 <InputContainer>
-                                    <Input type="text" name="name" placeholder="Nome" required />
-                                    <Input type="email" name="email" placeholder="Email" required />
+                                    <Input type="text" name="name" placeholder="Nome" required value={name} onChange={(e) => { setName(e.target.value) }} />
+                                    <Input type="email" name="email" placeholder="Email" required value={email} onChange={(e) => { setEmail(e.target.value) }} />
                                 </InputContainer>
                                 <Column>
-                                    <Input type="text" name="subject" autoComplete="off" placeholder="Assunto" required />
+                                    <Input type="text" name="subject" autoComplete="off" placeholder="Assunto" required value={subject} onChange={(e) => { setSubject(e.target.value) }} />
                                 </Column>
                                 <Column>
-                                    <TextArea autoComplete="off" name="message" placeholder="Mensagem" required />
+                                    <TextArea autoComplete="off" name="message" placeholder="Mensagem" value={message} onChange={(e) => { setMessage(e.target.value) }} required />
                                 </Column>
                                 <Column>
                                     <UlContainer>
@@ -33,12 +72,11 @@ export default function ContactMe() {
                                             <InputButton type="submit" value="Enviar mensagem" />
                                         </Button>
                                         <Button>
-                                            <InputButton backgroundColor="#444" type="reset" value="Limpar" />
+                                            <InputButton backgroundColor="#444" type="reset" value="Limpar" onClick={handleClean} />
                                         </Button>
                                     </UlContainer>
                                 </Column>
                             </FormRow>
-                            <input type="hidden" name="accessKey" value="f5a871bb-75fb-40ef-9896-e51a7a61682f" />
                         </Form>
                     </Column>
                     <SocialMedia />
