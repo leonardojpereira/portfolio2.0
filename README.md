@@ -21,7 +21,7 @@ Este projeto foi desenvolvido como uma forma de apresentar meu trabalho, habilid
 - <img align="center" alt="logo_styled_components" height="40" width="50" src="https://www.daggala.com/static/228867c3668e439101821568a8a03b54/19ca5/sc.png"> **Styled-Components**: Uma biblioteca para escrever estilos CSS de forma mais legível e modular utilizando JavaScript.
 - <img align="center" alt="logo_styled_components" height="40" width="50" src="https://cdn-icons-png.flaticon.com/512/2535/2535403.png"> **Outras Dependências**: Além das principais tecnologias mencionadas acima, utilizei diversas outras dependências para auxiliar no desenvolvimento, como o `react-icons`, `react-toastify`, `react-intersection-observer`, `react-transition-group` e o `@emailjs`.
 
-## Instalação e Uso
+## :electric_plug: Instalação e Uso
 
 Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
 
@@ -37,7 +37,7 @@ Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
 https://leonardobarbosaportfolio.netlify.app/
 ```
 
-## Imagem / Icones
+## :framed_picture: Imagem / Icones
 
 https://react-icons.github.io/react-icons/
 
