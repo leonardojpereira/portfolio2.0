@@ -17,8 +17,8 @@ Este projeto foi desenvolvido como uma forma de apresentar meu trabalho, habilid
 * [Visual Studio Code](https://code.visualstudio.com) - Coding Editor
 
 ## 💻 Tecnologias utilizadas
-<div display="flex">
- <img align="center" alt="leo-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<div display="flex" >
+ <img alt="leo-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <p>ReactJS: Um poderoso framework JavaScript para construção de interfaces de usuário.</p>
 </div>
 
