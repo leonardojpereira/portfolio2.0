@@ -18,7 +18,7 @@ Este projeto foi desenvolvido como uma forma de apresentar meu trabalho, habilid
 
 ## 💻 Tecnologias utilizadas
 -  <img align="center" alt="logo_react" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **ReactJS**: Um poderoso framework JavaScript para construção de interfaces de usuário.
-- <img align="center" alt="logo_styled_components" height="40" width="50" src="https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png"> **Styled-Components**: Uma biblioteca para escrever estilos CSS de forma mais legível e modular utilizando JavaScript.
+- <img align="center" alt="logo_styled_components" height="40" width="50" src="https://www.thanosjs.com/static/media/styled.b7199e0a.jfif"> **Styled-Components**: Uma biblioteca para escrever estilos CSS de forma mais legível e modular utilizando JavaScript.
 - **Outras Dependências**: Além das principais tecnologias mencionadas acima, utilizei diversas outras dependências para auxiliar no desenvolvimento, como [nome da dependência 1], [nome da dependência 2], [nome da dependência 3], entre outras.
 
 ## :link: Deploy
