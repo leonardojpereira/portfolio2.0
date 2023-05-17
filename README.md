@@ -17,7 +17,7 @@ Este projeto foi desenvolvido como uma forma de apresentar meu trabalho, habilid
 * [Visual Studio Code](https://code.visualstudio.com) - Coding Editor
 
 ## 💻 Tecnologias utilizadas
-- **ReactJS**: Um poderoso framework JavaScript para construção de interfaces de usuário.
+-  <img align="center" alt="logo_react" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **ReactJS**: Um poderoso framework JavaScript para construção de interfaces de usuário.
 - **Styled-Components**: Uma biblioteca para escrever estilos CSS de forma mais legível e modular utilizando JavaScript.
 - **Outras Dependências**: Além das principais tecnologias mencionadas acima, utilizei diversas outras dependências para auxiliar no desenvolvimento, como [nome da dependência 1], [nome da dependência 2], [nome da dependência 3], entre outras.
 
