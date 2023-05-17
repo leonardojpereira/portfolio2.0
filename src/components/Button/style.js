@@ -19,8 +19,13 @@ export const ButtonLink = styled.a`
   height: ${props => props.height || '50px'};
   font-size: ${props => props.fontSize || '1.1em'};
   width: ${props => props.width || '14em'};
+  gap: ${props => props.gap || '0'};
   &:hover {
     width: ${props => props.widthOnHover || '15em'};
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 500px) {
+    width: ${props => props.widthMobileLarge || '14em'};
   }
   @media screen and (max-width: 365px) {
     width: ${props => props.widthMobile || '13em'};

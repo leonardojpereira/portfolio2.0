@@ -4,6 +4,8 @@ import SocialMedia from "../SocialMedia";
 import Title from "../Title";
 import { ContactMeSection, Container, Header, Subtitle, Row, Column, Form, FormRow, InputContainer, Input, TextArea, UlContainer, Button, InputButton } from './style';
 import emailJS from '@emailjs/browser';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { AiOutlineClear } from 'react-icons/ai';
 import { toast } from "react-toastify";
 
 export default function ContactMe() {
@@ -11,7 +13,6 @@ export default function ContactMe() {
     const [subject, setSubject] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-
 
     function sendEmail(e) {
         e.preventDefault();
@@ -69,10 +70,10 @@ export default function ContactMe() {
                                 <Column>
                                     <UlContainer>
                                         <Button>
-                                            <InputButton type="submit" value="Enviar mensagem" />
+                                            <InputButton type="submit" value="Enviar mensagem"><FaTelegramPlane size={22}/>Enviar mensagem</InputButton>
                                         </Button>
                                         <Button>
-                                            <InputButton backgroundColor="#444" type="reset" value="Limpar" onClick={handleClean} />
+                                            <InputButton type="reset" backgroundColor="#444" onClick={handleClean}><AiOutlineClear size={22}/>Limpar</InputButton>
                                         </Button>
                                     </UlContainer>
                                 </Column>

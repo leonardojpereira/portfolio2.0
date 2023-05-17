@@ -62,6 +62,10 @@ export const Text = styled.p`
 export const ButtonContainer = styled.div`
  display: flex;
  gap: 20px;
+ @media screen and (max-width: 500px) {
+  flex-direction: column;
+  width: 100%;
+ }
 `;
 
 export const SkillsContainer = styled.div`
@@ -80,7 +84,7 @@ export const TitleLevel = styled.h3`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 28px;
   @media screen  and (max-width: 500px) {
   grid-template-columns: repeat(1, 1fr);
   }

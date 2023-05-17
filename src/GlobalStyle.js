@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+import { createGlobalStyle } from "styled-components";
 
+export const GlobalStyle = createGlobalStyle`
 * {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -22,3 +23,9 @@ h2 {
 body {
   background-image: url(./images/bg.png);
 }
+
+strong {
+  color: rgb(0, 131, 255);
+}
+`;
+

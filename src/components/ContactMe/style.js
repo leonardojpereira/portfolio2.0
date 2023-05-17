@@ -50,13 +50,17 @@ export const FormRow = styled.div`
     box-sizing: border-box;
     align-items: stretch;
     gap: 25px;
+    
 `;
 
 export const InputContainer = styled.div`
-        display: flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 25px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const Input = styled.input`
@@ -114,9 +118,11 @@ export const Button = styled.li`
   }
 `;
 
-export const InputButton = styled.input`
+export const InputButton = styled.button`
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff !important;
     text-decoration: none;
     font-weight: 700;
@@ -129,9 +135,15 @@ export const InputButton = styled.input`
     padding: 1em 2.35em 1em 2.35em;
     font-size: 1.1em;
     max-width: 24em;
+    gap: 6px;
+    transition: ease .3s;
+    &:hover {
+        opacity: 0.8;
+    }
     @media screen  and (max-width: 435px) {
     width: 100%;
     max-width: 100%;
+
   }
 `;
 

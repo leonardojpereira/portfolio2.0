@@ -1,6 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
+import { RiFolderUserFill } from 'react-icons/ri';
+import { MdBuild } from 'react-icons/md';
 
 import {
   AboutMeSection,
@@ -62,21 +64,15 @@ export default function AboutMe() {
           <AboutMeTextContainer >
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Olá! Eu sou um estudante de Análise e Desenvolvimento de Sistemas
-              no 3º semestre, com uma paixão por criar belas e funcionais
-              interfaces para a web. Tenho 20 anos e moro em Santos, e estou
-              procurando uma oportunidade para aplicar minhas habilidades como
-              Desenvolvedor Front-End em projetos desafiadores. Estou
-              constantemente aprendendo e buscando melhorar, e estou ansioso
-              para contribuir com a sua equipe.
+              Olá! Me chamo Leonardo, tenho 20 anos e estou no meu <strong>3º semestre</strong> de <strong>Análise e Desenvolvimento de Sistemas</strong>. Atualmente, tenho experiência em projetos acadêmicos e pessoais, onde pude aplicar meus conhecimentos em HTML, CSS, JavaScript e outras tecnologias relevantes para o desenvolvimento <strong>front-end</strong>. Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas tecnologias utilizadas. Além disso, finalizei um curso de inglês com duração de 5 anos e tenho <strong>sólido conhecimento na língua inglesa</strong>.  
             </Text>
             <Text>
               Caso queira saber um pouco mais sobre mim, confira o meu currículo
               logo abaixo.
             </Text>
             <ButtonContainer>
-              <ButtonLink fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing">Meu currículo</ButtonLink>
-              <ButtonLink fontSizeMobile="0.9em" href="#projects" >Meus projetos</ButtonLink>
+              <ButtonLink gap="9px" widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing"><RiFolderUserFill color="#fff" size={26} /> Meu currículo</ButtonLink>
+              <ButtonLink gap="9px" widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" href="#projects"><MdBuild color="#fff" size={22} /> Meus projetos</ButtonLink>
             </ButtonContainer>
           </AboutMeTextContainer>
           <SkillsContainer>

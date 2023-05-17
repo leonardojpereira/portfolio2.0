@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <ToastContainer autoClose={2000} pauseOnHover={false} />
+      <GlobalStyle/>
       <Header />
       <Home />
       <AboutMe />

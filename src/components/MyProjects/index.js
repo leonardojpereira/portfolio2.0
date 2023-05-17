@@ -17,6 +17,7 @@ import {
 } from "./style";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { RiGithubLine } from "react-icons/ri";
+import { BsFillChatTextFill } from 'react-icons/bs';
 
 import InfoGamesImage from "../../images/infogames.jpg";
 import SalesSystemImage from "../../images/salesystem.png";
@@ -124,11 +125,13 @@ export default function MyProjects() {
           fontSize="1.3em"
           height="75px"
           width="16em"
-          widthOnHover="17em"
+          widthOnHover="16em"
           href="#contact"
           fontSizeMobile="1em"
+          gap="9px"
         >
-          Fale comigo!
+          <BsFillChatTextFill size={32}/>
+          Fale comigo
         </ButtonLink>
       </Container>
     </MyProjectsSection>
