@@ -19,7 +19,7 @@ Este projeto foi desenvolvido como uma forma de apresentar meu trabalho, habilid
 ## 💻 Tecnologias utilizadas
 -  <img align="center" alt="logo_react" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **ReactJS**: Um poderoso framework JavaScript para construção de interfaces de usuário.
 - <img align="center" alt="logo_styled_components" height="40" width="50" src="https://www.daggala.com/static/228867c3668e439101821568a8a03b54/19ca5/sc.png"> **Styled-Components**: Uma biblioteca para escrever estilos CSS de forma mais legível e modular utilizando JavaScript.
-- <img align="center" alt="logo_styled_components" height="40" width="50" src="https://cdn-icons-png.flaticon.com/512/2535/2535403.png"> **Outras Dependências**: Além das principais tecnologias mencionadas acima, utilizei diversas outras dependências para auxiliar no desenvolvimento, como o react-icons, react-toastify, react-intersection-observer, react-transition-group e o @emailjs.
+- <img align="center" alt="logo_styled_components" height="40" width="50" src="https://cdn-icons-png.flaticon.com/512/2535/2535403.png"> **Outras Dependências**: Além das principais tecnologias mencionadas acima, utilizei diversas outras dependências para auxiliar no desenvolvimento, como o `react-icons`, `react-toastify`, `react-intersection-observer`, `react-transition-group` e o `@emailjs`.
 
 ## Instalação e Uso
 
