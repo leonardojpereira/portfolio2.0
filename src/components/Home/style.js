@@ -91,17 +91,18 @@ export const Title = styled.h1`
   padding-right: 10px;
   max-width: 650px;
   padding-right: 6px;
+  font-size: 3.25em;
   @media screen and (max-width: 720px) {
       font-size: 2.5em
   }
   @media screen and (max-width: 540px) {
-      font-size: 2em
+      font-size: 2em;
   }
   @media screen and (max-width: 420px) {
-      font-size: 1.7em
+      font-size: 1.7em;
   }
   @media screen and (max-width: 365px) {
-      font-size: 1.5em
+      font-size: 1.5em;
   }
   
 `;
