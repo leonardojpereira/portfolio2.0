@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+    font-size: 2.5em;
     letter-spacing: -0.015em;
 }
 

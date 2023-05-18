@@ -30,7 +30,9 @@ export const LevelBarScore = styled.div`
   background-color: ${props => props.backgroundColor};
   height: 100%;
   border-radius: 10px;
-  width: ${(props) => props.width};
   transition: width 1.5s ease-in-out; /* adicionado para animação */
-  width: ${(props) => (props.animationWidth ? props.animationWidth : props.width)}; /* adicionado para animação */
+  width: ${(props) => (props.animationWidth ? props.animationWidth : props.width)}; 
+  @media screen and (max-width: 500px) {
+    width: ${(props) => props.width};
+  }
 `;

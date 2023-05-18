@@ -28,7 +28,6 @@ export const ButtonLink = styled.a`
     width: ${props => props.widthMobileLarge || '14em'};
   }
   @media screen and (max-width: 365px) {
-    width: ${props => props.widthMobile || '13em'};
     font-size: ${props => props.fontSizeMobile || '1.1em'};
     &:hover {
       width: ${props => props.widthMobileHover || '14em'};

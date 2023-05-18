@@ -71,7 +71,7 @@ export default function AboutMe() {
               logo abaixo.
             </Text>
             <ButtonContainer>
-              <ButtonLink gap="9px" widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/13G_B-VoMDxh7ZYHw1nS3b3Xdv15pwotR/view?usp=sharing"><RiFolderUserFill color="#fff" size={26} /> Meu currículo</ButtonLink>
+              <ButtonLink gap="9px"  widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/1gwvby1dbROWhjrHwDFaUNCE6YqhDuDhB/view?usp=sharing"><RiFolderUserFill color="#fff" size={26} /> Meu currículo</ButtonLink>
               <ButtonLink gap="9px" widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" href="#projects"><MdBuild color="#fff" size={22} /> Meus projetos</ButtonLink>
             </ButtonContainer>
           </AboutMeTextContainer>
