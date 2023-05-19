@@ -17,7 +17,11 @@ export default function SkillBar({ skill, animationWidth }) {
         <Score>{score}</Score>
       </ContainerSkill>
       <LevelBar>
-        <LevelBarScore backgroundColor={color} width={skill.score} animationWidth={animationWidth} />
+        <LevelBarScore
+          backgroundColor={color}
+          width={skill.score}
+          animationWidth={animationWidth}
+        />
       </LevelBar>
     </LevelContainer>
   );

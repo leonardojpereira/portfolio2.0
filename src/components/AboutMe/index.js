@@ -1,8 +1,7 @@
-import { useInView } from "react-intersection-observer";
 import { CSSTransition } from "react-transition-group";
-import { useState } from "react";
-import { RiFolderUserFill } from 'react-icons/ri';
-import { MdBuild } from 'react-icons/md';
+import { RiFolderUserFill } from "react-icons/ri";
+import { MdBuild } from "react-icons/md";
+import { useAnimation } from "../../hooks";
 
 import {
   AboutMeSection,
@@ -16,10 +15,7 @@ import {
   TitleLevel,
   Grid,
 } from "./style";
-import SkillBar from "../SkillBar";
-
-
-
+import SkillBar from "./SkillBar";
 import Title from "../Title";
 import { ButtonLink } from "../Button/style";
 
@@ -37,42 +33,51 @@ export const skills = [
 ];
 
 export default function AboutMe() {
-
-  const [inView, setInView] = useState(false);
-
-  const getAnimationWidth = (score) => {
-    if (inView) {
-      return score;
-    }
-    return "0%";
-  };
-
-  const { ref } = useInView({
-    triggerOnce: true,
-    rootMargin: "-100px 0px",
-    threshold: 0.3,
-    onChange: (inView) => {
-      setInView(inView);
-    },
-  });
+  const { getAnimationWidth, ref, inView } = useAnimation();
 
   return (
-    <AboutMeSection id="aboutme" ref={ref} >
+    <AboutMeSection id="aboutme" ref={ref}>
       <Container data-aos="fade-right">
         <Title children="Sobre mim" />
         <Row>
-          <AboutMeTextContainer >
+          <AboutMeTextContainer>
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Olá! Me chamo Leonardo, tenho 20 anos e estou no meu <strong>3º semestre</strong> de <strong>Análise e Desenvolvimento de Sistemas</strong>. Atualmente, tenho experiência em projetos acadêmicos e pessoais, onde pude aplicar meus conhecimentos em HTML, CSS, JavaScript e outras tecnologias relevantes para o desenvolvimento <strong>front-end</strong>. Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas tecnologias utilizadas. Além disso, finalizei um curso de inglês com duração de 5 anos e tenho <strong>sólido conhecimento na língua inglesa</strong>.  
+              Olá! Me chamo Leonardo, tenho 20 anos e estou no meu{" "}
+              <strong>3º semestre</strong> de{" "}
+              <strong>Análise e Desenvolvimento de Sistemas</strong>.
+              Atualmente, tenho experiência em projetos acadêmicos e pessoais,
+              onde pude aplicar meus conhecimentos em HTML, CSS, JavaScript e
+              outras tecnologias relevantes para o desenvolvimento{" "}
+              <strong>front-end</strong>. Logo abaixo, você poderá ver alguns
+              dos meus projetos e as respectivas tecnologias utilizadas. Além
+              disso, finalizei um curso de inglês com duração de 5 anos e tenho{" "}
+              <strong>sólido conhecimento na língua inglesa</strong>.
             </Text>
             <Text>
               Caso queira saber um pouco mais sobre mim, confira o meu currículo
               logo abaixo.
             </Text>
             <ButtonContainer>
-              <ButtonLink gap="9px"  widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" target="blank" href="https://drive.google.com/file/d/1gwvby1dbROWhjrHwDFaUNCE6YqhDuDhB/view?usp=sharing"><RiFolderUserFill color="#fff" size={26} /> Meu currículo</ButtonLink>
-              <ButtonLink gap="9px" widthOnHover="14em" widthMobileLarge="100%" fontSizeMobile="0.9em" href="#projects"><MdBuild color="#fff" size={22} /> Meus projetos</ButtonLink>
+              <ButtonLink
+                gap="9px"
+                widthOnHover="14em"
+                widthMobileLarge="100%"
+                fontSizeMobile="0.9em"
+                target="blank"
+                href="https://drive.google.com/file/d/1gwvby1dbROWhjrHwDFaUNCE6YqhDuDhB/view?usp=sharing"
+              >
+                <RiFolderUserFill color="#fff" size={26} /> Meu currículo
+              </ButtonLink>
+              <ButtonLink
+                gap="9px"
+                widthOnHover="14em"
+                widthMobileLarge="100%"
+                fontSizeMobile="0.9em"
+                href="#projects"
+              >
+                <MdBuild color="#fff" size={22} /> Meus projetos
+              </ButtonLink>
             </ButtonContainer>
           </AboutMeTextContainer>
           <SkillsContainer>
