@@ -20,10 +20,6 @@ h2 {
     letter-spacing: -0.015em;
 }
 
-body {
-  background-image: url(./images/bg.png);
-}
-
 strong {
   color: rgb(0, 131, 255);
 }
