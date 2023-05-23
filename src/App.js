@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalStyle } from "./GlobalStyle";
+import './style.css';
 
 function App() {
 
