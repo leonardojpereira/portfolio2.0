@@ -2,7 +2,7 @@ import InfoGamesImage from "../../images/infogames.jpg";
 import SalesSystemImage from "../../images/salesystem.png";
 import BlogAppImage from "../../images/blogapp.jpg";
 import CardPersonImage from "../../images/cardperson.png";
-import CreditCardImage from "../../images/creditcard.png";
+import FinancialAppImage from "../../images/financial_app_print.png";
 import BibleAppImage from "../../images/bible.jpg";
 
 const projects = [
@@ -31,17 +31,15 @@ const projects = [
     deploy: "https://leonardojpereira.github.io/cardperson-app/",
   },
   {
-    name: "Credit Card",
-    image: CreditCardImage,
+    name: "Financial App",
+    image: FinancialAppImage,
     repository:
-      "https://github.com/leonardojpereira/interactvie-credit-card-react",
-    deploy: "https://creditcard.netlify.app/",
+      "https://github.com/leonardojpereira/financial-app",
+    deploy: "https://financialreactapp.netlify.app/",
   },
   {
     name: "Bíblia Digital",
     image: BibleAppImage,
-    description:
-      "Projeto feito em ReactJS, trata-se de uma Bíblia digital que retorna os dados através de uma API.",
     repository: "https://github.com/leonardojpereira/bible-app",
     deploy: "https://digitalbible.netlify.app/",
   },
