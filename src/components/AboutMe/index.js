@@ -49,7 +49,7 @@ export default function AboutMe() {
               Atualmente, tenho experiência em projetos acadêmicos e pessoais,
               onde pude aplicar meus conhecimentos em HTML, CSS, JavaScript e
               outras tecnologias relevantes para o desenvolvimento{" "}
-              <strong>front-end</strong>. Logo abaixo, você poderá ver alguns
+              <strong>web</strong>. Logo abaixo, você poderá ver alguns
               dos meus projetos e as respectivas tecnologias utilizadas. Além
               disso, finalizei um curso de inglês com duração de 5 anos e tenho{" "}
               <strong>sólido conhecimento na língua inglesa</strong>.

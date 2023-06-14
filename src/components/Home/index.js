@@ -29,7 +29,7 @@ export default function Home() {
               </Title>
             </header>
             <TextAboutMe>
-              Sou um desenvolvedor <strong>Front-End</strong> e esse é o meu
+              Sou um desenvolvedor <strong>Web</strong> e esse é o meu
               portfolio pessoal. Fique a vontade para explorá-lo!
             </TextAboutMe>
             <ButtonLink
