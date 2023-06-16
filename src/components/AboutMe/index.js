@@ -65,7 +65,7 @@ export default function AboutMe() {
                 widthMobileLarge="100%"
                 fontSizeMobile="0.9em"
                 target="blank"
-                href="https://drive.google.com/file/d/1j3KShDFiGa6GBnnsWGPvatHGrToS1--N/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MqHK3E2a7G5dar5RTpjcixjxEZezA_bm/view?usp=sharing"
               >
                 <RiFolderUserFill color="#fff" size={26} /> Meu currículo
               </ButtonLink>
