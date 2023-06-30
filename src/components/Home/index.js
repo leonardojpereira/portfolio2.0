@@ -38,8 +38,8 @@ export default function Home() {
               height="70px"
               widthOnHover="21em"
               fontSizeMobile="1em"
-              widthMobileHover="14em"
-
+              widthMobileHover="17em"
+              widthMobileLarge="17em"
             >
               Conheça mais sobre mim!
             </ButtonLink>
