@@ -64,6 +64,7 @@ export default function AboutMe() {
                 widthOnHover="14em"
                 widthMobileLarge="100%"
                 fontSizeMobile="0.9em"
+                widthMobileHover="100%"
                 target="blank"
                 href="https://drive.google.com/file/d/1MqHK3E2a7G5dar5RTpjcixjxEZezA_bm/view?usp=sharing"
               >
@@ -73,6 +74,7 @@ export default function AboutMe() {
                 gap="9px"
                 widthOnHover="14em"
                 widthMobileLarge="100%"
+                widthMobileHover="100%"
                 fontSizeMobile="0.9em"
                 href="#projects"
               >
