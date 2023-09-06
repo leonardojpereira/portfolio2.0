@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalStyle } from "./GlobalStyle";
 import './style.css';
+import Certification from "./components/Certifications";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Home />
       <AboutMe />
       <MyProjects />
+      <Certification/>
       <ContactMe />
     </>
   );
