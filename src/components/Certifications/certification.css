@@ -1,0 +1,19 @@
+#certification {
+    text-align: center;
+    background: #fff;
+}
+
+.swiper {
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+}
