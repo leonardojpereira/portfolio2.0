@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -9,6 +9,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import './certification.css';
 import Title from '../Title';
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 
 import englishCertificate from '../../images/certificado_ingles.png';
 import frontendCertificate from '../../images/certificado_front-end.png';
@@ -66,9 +67,30 @@ const certificates = [
 
 export default function Certification() {
 
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    useEffect(() => {
+        if (modalOpen) {
+            document.body.classList.add('modal-open');
+        } else {
+            document.body.classList.remove('modal-open');
+        }
+    }, [modalOpen]);
+
+    const openModal = (image) => {
+        setSelectedImage(image);
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+        setModalOpen(false);
+    };
+
     return (
         <section id='certification'>
-            <div className="container">
+            <div className="container" data-aos="fade-up">
                 <Title children="Certificações" />
                 <Swiper
                     effect={'coverflow'}
@@ -93,7 +115,7 @@ export default function Certification() {
                 >
                     {certificates.map((certificate) => (
                         <SwiperSlide key={certificate.alt}>
-                            <img src={certificate.image} alt={certificate.alt} />
+                            <img src={certificate.image} alt={certificate.alt} onClick={() => openModal(certificate.image)} />
                         </SwiperSlide>
                     ))}
 
@@ -107,6 +129,16 @@ export default function Certification() {
                         </div>
                     </div>
                 </Swiper>
+            </div>
+            <div
+                className="modal"
+                style={{ display: modalOpen ? 'block' : 'none' }}
+                onClick={closeModal}
+            >
+                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <span className="close" onClick={closeModal}><GrClose fontSize={22} /></span>
+                    {selectedImage && <img src={selectedImage} alt="Certificate" className="modal-image" />}
+                </div>
             </div>
         </section>
     );
