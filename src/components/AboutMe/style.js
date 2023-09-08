@@ -91,3 +91,20 @@ export const Grid = styled.div`
 `;
 
 export const SkillName = styled.span``;
+
+
+export const SwiperControler = styled.div`
+
+`;
+
+export const SwiperPagination = styled.div`
+position: relative;
+width: 15rem !important;
+margin-top: 42px;
+`;
+
+
+export const SwiperSlide = styled.div`
+width: 100%;
+`;
+

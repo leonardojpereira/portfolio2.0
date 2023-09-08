@@ -11,7 +11,7 @@ export default function MyProjects() {
   return (
     <MyProjectsSection id="projects">
       <Container data-aos="fade-up">
-        <Title children="Meus projetos" />
+        <Title children="Projetos" />
         <Row>
           {projects.map((project) => (
             <Project key={project.name} project={project} />

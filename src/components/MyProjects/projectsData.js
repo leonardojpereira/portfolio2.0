@@ -3,7 +3,7 @@ import SalesSystemImage from "../../images/salesystem.png";
 import BlogAppImage from "../../images/blogapp.jpg";
 import CardPersonImage from "../../images/cardperson.png";
 import FinancialAppImage from "../../images/financial_app_print.png";
-import BibleAppImage from "../../images/bible.jpg";
+import PureFlaveImage from "../../images/pure_flave_project.jpg";
 
 const projects = [
   {
@@ -38,10 +38,10 @@ const projects = [
     deploy: "https://financialreactapp.netlify.app/",
   },
   {
-    name: "Bíblia Digital",
-    image: BibleAppImage,
-    repository: "https://github.com/leonardojpereira/bible-app",
-    deploy: "https://digitalbible.netlify.app/",
+    name: "E-commerce - Pure Flave",
+    image: PureFlaveImage,
+    repository: "https://github.com/leonardojpereira/pure_flave_php",
+    deploy: "https://github.com/leonardojpereira/pure_flave_php"
   },
 ];
 
