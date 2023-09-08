@@ -89,7 +89,7 @@ export const Title = styled.h1`
   border-right: 3px solid;
   animation: ${typing} 2s steps(19), ${blink} 0.5s step-end infinite alternate;
   padding-right: 10px;
-  max-width: 650px;
+  max-width: 700px;
   padding-right: 6px;
   font-size: 3.25em;
   @media screen and (max-width: 720px) {

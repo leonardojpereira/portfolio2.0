@@ -3,6 +3,14 @@ import { RiFolderUserFill } from "react-icons/ri";
 import { MdBuild } from "react-icons/md";
 import { useAnimation } from "../../hooks";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './swiper.css';
+
 import {
   AboutMeSection,
   Container,
@@ -14,12 +22,14 @@ import {
   SkillsContainer,
   TitleLevel,
   Grid,
+  SwiperControler,
+  SwiperPagination
 } from "./style";
 import SkillBar from "./SkillBar";
 import Title from "../Title";
 import { ButtonLink } from "../Button/style";
 
-export const skills = [
+export const firstSliderSkill = [
   { name: "HTML5", score: "90%", color: "#ff6347" },
   { name: "CSS", score: "80%", color: "#264de4" },
   { name: "JavaScript", score: "75%", color: "#F0DB4F" },
@@ -27,9 +37,21 @@ export const skills = [
   { name: "ReactJS", score: "75%", color: "#61dafb" },
   { name: "NextJS", score: "60%", color: "#000" },
   { name: "Styled-Components", score: "70%", color: "purple" },
+  { name: "PHP", score: "70%", color: "#4F5B93" },
+  { name: "MySQL", score: "50%", color: "#f59620" },
+  { name: "WordPress", score: "75%", color: "#21759b" },
+
+];
+
+export const secondSliderSkill = [
   { name: "SASS", score: "60%", color: "#cc6699" },
   { name: "REST API", score: "75%", color: "cyan" },
   { name: "Git", score: "80%", color: "#f34f29" },
+  { name: "BootStrap", score: "60%", color: "#9461fb" },
+  { name: "TailwindCSS", score: "50%", color: "#38bdf8" },
+  { name: "React Native", score: "65%", color: "#61dafb" },
+  { name: "Linux", score: "50%", color: "#2577b1" },
+  { name: "MongoDB", score: "45%", color: "#00ED64" },
 ];
 
 export default function AboutMe() {
@@ -43,16 +65,15 @@ export default function AboutMe() {
           <AboutMeTextContainer>
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Olá! Me chamo Leonardo, tenho 20 anos e estou no meu{" "}
+              Me chamo Leonardo, tenho 20 anos e estou no meu{" "}
               <strong>3º semestre</strong> de{" "}
               <strong>Análise e Desenvolvimento de Sistemas</strong>.
-              Atualmente, tenho experiência em projetos acadêmicos e pessoais,
-              onde pude aplicar meus conhecimentos em HTML, CSS, JavaScript e
-              outras tecnologias relevantes para o desenvolvimento{" "}
-              <strong>web</strong>. Logo abaixo, você poderá ver alguns
-              dos meus projetos e as respectivas tecnologias utilizadas. Além
-              disso, finalizei um curso de inglês com duração de 5 anos e tenho{" "}
-              <strong>sólido conhecimento na língua inglesa</strong>.
+              Trabalhei durante 5 anos na área administrativa e fiz uma
+              transição de carreira para o {" "}<strong>Desenvolvimento Web</strong>.
+              Desde então, venho  adquirindo experiências através de projetos pessoais, acadêmicos
+              e freelance. Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas
+              tecnologias utilizadas. Além disso, possuo nível de{" "}
+              <strong>inglês avançado</strong>.
             </Text>
             <Text>
               Caso queira saber um pouco mais sobre mim, confira o meu currículo
@@ -66,7 +87,7 @@ export default function AboutMe() {
                 fontSizeMobile="0.9em"
                 widthMobileHover="100%"
                 target="blank"
-                href="https://drive.google.com/file/d/1MqHK3E2a7G5dar5RTpjcixjxEZezA_bm/view?usp=sharing"
+                href="https://drive.google.com/file/d/1LKcSWGk_Rk5GH8qMGbkKGS5zGrOizZKb/view?usp=sharing"
               >
                 <RiFolderUserFill color="#fff" size={26} /> Meu currículo
               </ButtonLink>
@@ -84,21 +105,53 @@ export default function AboutMe() {
           </AboutMeTextContainer>
           <SkillsContainer>
             <TitleLevel>Meus conhecimentos</TitleLevel>
-            <Grid>
-              {skills.map((skill, index) => (
-                <CSSTransition
-                  key={index}
-                  in={inView}
-                  timeout={500}
-                  classNames="skill-animation"
-                >
-                  <SkillBar
-                    skill={skill}
-                    animationWidth={getAnimationWidth(skill.score)}
-                  />
-                </CSSTransition>
-              ))}
-            </Grid>
+            <Swiper
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={'auto'}
+              pagination={{ el: '.swiper-pagination', clickable: true }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              className="SwiperContainer"
+            >
+              <SwiperSlide className="SwiperSlide">
+                <Grid>
+                  {firstSliderSkill.map((skill, index) => (
+                    <CSSTransition
+                      key={index}
+                      in={inView}
+                      timeout={500}
+                      classNames="skill-animation"
+                    >
+                      <SkillBar
+                        skill={skill}
+                        animationWidth={getAnimationWidth(skill.score)}
+                      />
+                    </CSSTransition>
+                  ))}
+                </Grid>
+              </SwiperSlide>
+
+              <SwiperSlide className="SwiperSlide">
+                <Grid>
+                  {secondSliderSkill.map((skill, index) => (
+                    <CSSTransition
+                      key={index}
+                      in={inView}
+                      timeout={500}
+                      classNames="skill-animation"
+                    >
+                      <SkillBar
+                        skill={skill}
+                        animationWidth={getAnimationWidth(skill.score)}
+                      />
+                    </CSSTransition>
+                  ))}
+                </Grid>
+              </SwiperSlide>
+              <SwiperControler className="slider-controler">
+                <SwiperPagination className="swiper-pagination"></SwiperPagination>
+              </SwiperControler>
+            </Swiper>
           </SkillsContainer>
         </Row>
       </Container>
