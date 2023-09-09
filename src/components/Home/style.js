@@ -101,8 +101,8 @@ export const Title = styled.h1`
   @media screen and (max-width: 420px) {
       font-size: 1.7em;
   }
-  @media screen and (max-width: 365px) {
-      font-size: 1.5em;
+  @media screen and (max-width: 375px) {
+      font-size: 1.4em;
   }
   
 `;
