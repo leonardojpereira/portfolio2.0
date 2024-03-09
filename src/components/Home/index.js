@@ -1,5 +1,6 @@
 import ProfileImage from "../../images/profile.png";
 import { ButtonLink } from "../Button/style";
+
 import {
   HomeSection,
   Container,
@@ -29,7 +30,7 @@ export default function Home() {
               </Title>
             </header>
             <TextAboutMe>
-              Sou um desenvolvedor <strong>Web</strong> e esse é o meu
+              Sou <strong>Desenvolvedor de Software</strong> e esse é o meu
               portfolio pessoal. Fique a vontade para explorá-lo!
             </TextAboutMe>
             <ButtonLink
