@@ -35,7 +35,7 @@ export const firstSliderSkill = [
   { name: "JavaScript", score: "75%", color: "#F0DB4F" },
   { name: "NodeJS", score: "50%", color: "#3c873a" },
   { name: "ReactJS", score: "75%", color: "#61dafb" },
-  { name: "NextJS", score: "60%", color: "#000" },
+  { name: "Flutter", score: "70%",  color: "#027DFD"},
   { name: "Styled-Components", score: "70%", color: "purple" },
   { name: "PHP", score: "70%", color: "#4F5B93" },
   { name: "MySQL", score: "50%", color: "#f59620" },
@@ -52,6 +52,7 @@ export const secondSliderSkill = [
   { name: "React Native", score: "65%", color: "#61dafb" },
   { name: "Linux", score: "50%", color: "#2577b1" },
   { name: "MongoDB", score: "45%", color: "#00ED64" },
+  { name: "NextJS", score: "50%", color: "#000" },
 ];
 
 export default function AboutMe() {
@@ -65,13 +66,9 @@ export default function AboutMe() {
           <AboutMeTextContainer>
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Me chamo Leonardo, tenho 20 anos e estou no meu{" "}
-              <strong>3º semestre</strong> de{" "}
-              <strong>Análise e Desenvolvimento de Sistemas</strong>.
-              Trabalhei durante 5 anos na área administrativa e fiz uma
-              transição de carreira para o {" "}<strong>Desenvolvimento Web</strong>.
-              Desde então, venho  adquirindo experiências através de projetos pessoais, acadêmicos
-              e freelance. Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas
+              Me chamo Leonardo, tenho 20 anos, sou estudante de {" "}
+              Análise e Desenvolvimento de Sistemas e atualmente trabalho como <strong>Desenvolvedor Mobile</strong>.
+              Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas
               tecnologias utilizadas. Além disso, possuo nível de{" "}
               <strong>inglês avançado</strong>.
             </Text>

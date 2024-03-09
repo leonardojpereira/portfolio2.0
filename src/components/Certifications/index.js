@@ -21,6 +21,8 @@ import dataFundamentalsCertificate from '../../images/data_fundamentals.jpg';
 import nodeCertificate from '../../images/nodejs.jpg';
 import marketingDigitalCertificate from '../../images/marketing_digital.jpg';
 import linuxCertificate from '../../images/linux.jpg';
+import flutterCertificate from '../../images/flutter_certified.jpg';
+import dartCertificate from '../../images/dart_certified.jpg';
 
 const certificates = [
     {
@@ -62,7 +64,15 @@ const certificates = [
     {
         image: linuxCertificate,
         alt: 'Linux Certificate'
-    }
+    },
+    {
+        image: flutterCertificate,
+        alt: 'Flutter Certificate'
+    },
+    {
+        image: dartCertificate,
+        alt: 'Dart Certificate'
+    },
 ];
 
 export default function Certification() {
