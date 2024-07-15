@@ -6,8 +6,8 @@ import {
   SocialItem,
   SocialLink,
 } from "./style";
-import { FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function SocialMedia() {
   return (
@@ -32,27 +32,6 @@ export default function SocialMedia() {
             backgroundColor="#fff"
           >
             <AiFillGithub />
-          </SocialLink>
-        </SocialItem>
-
-        <SocialItem>
-          <SocialLink
-            target="blank"
-            href="https://www.instagram.com/leonardo.bpereira/"
-            color="#fff"
-            backgroundColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)"
-          >
-            <AiOutlineInstagram />
-          </SocialLink>
-        </SocialItem>
-
-        <SocialItem>
-          <SocialLink
-            target="blank"
-            href="https://www.facebook.com/leonardo.barbosa.96780671"
-            backgroundColor="#3C5A98"
-          >
-            <FaFacebookF />
           </SocialLink>
         </SocialItem>
 
