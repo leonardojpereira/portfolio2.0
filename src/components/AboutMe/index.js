@@ -66,8 +66,8 @@ export default function AboutMe() {
           <AboutMeTextContainer>
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Me chamo Leonardo, tenho 20 anos, sou estudante de {" "}
-              Análise e Desenvolvimento de Sistemas e atualmente trabalho como <strong>Desenvolvedor Mobile</strong>.
+              Me chamo Leonardo, tenho 21 anos, sou estudante de {" "}
+              Análise e Desenvolvimento de Sistemas e atualmente trabalho como <strong>Desenvolvedor Front-End</strong>.
               Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas
               tecnologias utilizadas. Além disso, possuo nível de{" "}
               <strong>inglês avançado</strong>.
