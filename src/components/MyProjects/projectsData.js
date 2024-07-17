@@ -5,6 +5,7 @@ import CardPersonImage from "../../images/cardperson.png";
 import FinancialAppImage from "../../images/financial_app_print.png";
 import PureFlaveImage from "../../images/pure_flave_project.jpg";
 
+
 const projects = [
   {
     name: "Info Games",
