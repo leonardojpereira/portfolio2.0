@@ -30,6 +30,10 @@ export const ExperienceContainer = styled.div`
   @media (max-width: 1400px) {
     width: 100%;
   }
+
+  @media (max-width: 947px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ExperienceHeader = styled.div`
@@ -67,28 +71,45 @@ export const ExperienceTitle = styled.div`
 export const Title = styled.h3`
   margin: 0;
   font-size: 22px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const Period = styled.span`
   font-size: 16px;
   color: #aaa;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const ExperienceToggle = styled.div`
   font-size: 20px;
   position: absolute;
   right: 0;
-  transition: transform 0.6s ease;
+  transform: ${({ isOpen }) => (isOpen ? "rotate(180deg)" : "rotate(0deg)")};
+  transition: transform 0.5s ease;
 
-  @media (max-width: 480px) {
-    right: -30px;
+  @media (max-width: 515px) {
+    top: 20px;
   }
 `;
 
 export const ExperienceDetails = styled.div`
   background-color: #1b1b1b;
   border-top: 1px solid #ddd;
-  padding: 20px 0;
+  padding: ${({ isOpen }) => (isOpen ? "20px 0" : "")};
+  overflow: hidden;
+  max-height: ${({ isOpen }) => (isOpen ? "1500px" : "0")};
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.5s ease;
+
+  @media (max-width: 947px) {
+    overflow: auto;;
+  }
 `;
 
 export const TitleRole = styled.span`
@@ -98,7 +119,6 @@ export const TitleRole = styled.span`
 
 export const ListActivities = styled.ul`
   margin-top: 20px;
-  margin-left: 20px;
 `;
 
 export const Activity = styled.li`
@@ -120,7 +140,7 @@ export const ProjectItem = styled.div`
   display: flex;
   gap: 14px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 947px) {
     flex-direction: column;
   }
 `;
@@ -141,6 +161,41 @@ export const ProjectPeriod = styled.span`
   color: #ff8a00;
 `;
 
+export const ProjectTecnologiesContainer = styled.div`
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #aaa;
+`;
+
+export const TitleTecnology = styled.span`
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #fff;
+`;
+
+export const ListTecnologies = styled.ul`
+  display: flex;
+  list-style: none;
+  gap: 12px;
+
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+`;
+
+export const Stack = styled.li`
+  font-size: 14px;
+  padding: 6px 12px;
+  background-color: rgb(255 138 0 / 70%);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+`;
+
 export const ProjectDescription = styled.p`
   margin: 0;
   font-size: 16px;
@@ -148,14 +203,13 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectImage = styled.img`
-  width: 120px;
+  max-width: 150px;
   object-fit: contain;
-  margin-bottom: 10px;
   border-radius: 6px;
   background-color: #fff;
 
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 947px) {
+    max-width: 100% !important;
     height: 100px;
     object-position: center;
   }

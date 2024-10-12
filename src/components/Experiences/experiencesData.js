@@ -4,6 +4,7 @@ import TKimage from '../../images/TimeKeeping-img.jpg';
 import BrasilExportImage from '../../images/brasil_export_logo.jpg';
 import ObraLeanImage from '../../images/obra_lean_logo.jpg';
 import WilsonSonsImage from '../../images/wilson_sons_logo.png';
+import ConcaisImage from '../../images/concais-logo.svg';
 
 
 export const experiences = [
@@ -14,34 +15,46 @@ export const experiences = [
     description: 'Desenvolvedor Front-End/Mobile', 
     projects: [
       {
-        name: 'Wilson Sons - Flutter Developer',
-        projectPeriod: 'Jul de 2024 - Atual',
+        name: 'Concais S.A | Front-End Developer',
+        projectPeriod: 'Ago de 2024 - Atual',
+        description: 'No projeto da Concais, atuei como desenvolvedor front-end, sendo responsável pelo desenvolvimento de todas as telas do sistema de gerenciamento de convidados. Minha principal tarefa foi garantir a integração das rotas do backend, assegurando a comunicação eficiente entre o front-end e a API. O sistema gerencia a entrada e saída de convidados dos navios atracados, proporcionando uma interface amigável e funcional para o usuário.',
+        image: ConcaisImage,
+        tecnologies: ['Angular' , 'TypeScript', 'HTML', 'CSS', 'Git', 'Azure DevOps']
+      },
+      {
+        name: 'Wilson Sons | Mobile Developer',
+        projectPeriod: 'Jul de 2024 - Ago 2024',
         description: 'Responsável por integrar APIs para exibição dinâmica de dados, criar componentes reutilizáveis e modulares, implementar funcionalidades interativas e garantir que as telas sejam responsivas.',
-        image: WilsonSonsImage
+        image: WilsonSonsImage,
+        tecnologies: ['Flutter', 'Android Studio', 'Git', 'Azure DevOps']
       },
       {
-        name: 'Obra Lean - React Developer',
-        projectPeriod: 'Jun de 2024 - Atual',
-        description: 'Minhas responsabilidades incluem a criação de componentes reutilizáveis e modulares, a implementação de funcionalidades interativas, a integração com APIs para a exibição dinâmica de dados e a garantia de que as telas sejam responsivas e acessíveis em diferentes dispositivos e navegadores. Também colaboro estreitamente com designers para transformar layouts em experiências de usuário atraentes e intuitivas.',
-        image: ObraLeanImage
+        name: 'Obra Lean | Front-End Developer',
+        projectPeriod: 'Jun de 2024 - Ago 2024',
+        description: 'O sistema Obra Lean é uma plataforma de gerenciamento de obras que oferece uma visão clara e detalhada do progresso de cada projeto, permitindo uma administração mais eficiente e informada dos recursos e das tarefas dentro da organização. Utilizei o React para desenvolver novos módulos e telas.',
+        image: ObraLeanImage,
+        tecnologies: ['React' , 'TypeScript', 'Styled-Components', '.NET', 'Git', 'Azure DevOps']
       },
       {
-        name: 'TimeKeeping - Angular Developer',
-        projectPeriod: 'Abr de 2024 - Atual',
-        description: 'Este sistema facilita a gestão do tempo e proporciona uma visão clara e detalhada das alocações de horas, permitindo uma administração mais precisa e informada dos recursos e das tarefas dentro da organização. Utilizei o Angular para o desenvolvimento de novos módulos e telas.',
-        image: TKimage
-      },
-      {
-        name: 'Fórum Brasil Export - Flutter Developer',
-        projectPeriod: 'Mar de 2024 - Atual',
+        name: 'TimeKeeping | Front-End Developer',
+        projectPeriod: 'Abr de 2024 - Ago 2024',
         description: 'Versão Mobile do TimeKeeping, desenvolvida em Flutter, para facilitar a gestão do tempo e proporcionar uma visão clara e detalhada das alocações de horas, permitindo uma administração mais precisa e informada dos recursos e das tarefas dentro da organização.',
-        image: BrasilExportImage
+        image: TKimage,
+        tecnologies: ['Angular' , 'TypeScript', 'HTML', 'CSS', 'Git', 'Azure DevOps']
       },
       {
-        name: 'TimeKeeping App - Flutter Developer',
-        projectPeriod: 'Mar de 2024 - Jun 2024',
+        name: 'Fórum Brasil Export | Mobile Developer',
+        projectPeriod: 'Mar de 2024 - Jul 2024',
         description: 'Utilizando o Flutter, desenvolvi novas telas para um portal de notícias com funcionalidades avançadas e uma interface intuitiva e responsiva. Este portal oferece aos usuários acesso fácil e rápido às últimas notícias e atualizações do setor de infraestrutura, transportes e logística.',
-        image: TKimage
+        image: BrasilExportImage,
+        tecnologies: ['Flutter' , 'Android Studio', 'Git', 'Azure DevOps']
+      },
+      {
+        name: 'TimeKeeping App | Mobile Developer',
+        projectPeriod: 'Mar de 2024 - Jun 2024',
+        description: 'Este sistema facilita a gestão do tempo e proporciona uma visão clara e detalhada das alocações de horas, permitindo uma administração mais precisa e informada dos recursos e das tarefas dentro da organização. Utilizei o Angular para o desenvolvimento de novos módulos e telas.',
+        image: TKimage,
+        tecnologies: ['Flutter' , 'Android Studio', 'Git', 'Azure DevOps']
       },
     ]
   },
@@ -49,7 +62,7 @@ export const experiences = [
     logo: AgenciaTupiniquimImage,
     title: 'Agência Tupiniquim',
     period: 'Setembro de 2023 - Dezembro de 2023',
-    description: 'Desenvolvedor WordPress',
+    description: 'Desenvolvedor Front-End/WordPress',
     activity: [
       'Desenho de funcionalidades para demandas e organização do desenvolvimento.',
       'Desenvolvimento web via WordPress.',
