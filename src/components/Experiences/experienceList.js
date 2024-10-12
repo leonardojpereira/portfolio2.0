@@ -18,6 +18,7 @@ const ExperienceList = () => {
             description={exp.description}
             activity={exp.activity}
             projects={exp.projects}
+            tecnologies={exp.tecnologies}
           />
         ))}
       </ExperienceSection>
