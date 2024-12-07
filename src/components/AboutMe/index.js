@@ -30,17 +30,16 @@ import Title from "../Title";
 import { ButtonLink } from "../Button/style";
 
 export const firstSliderSkill = [
-  { name: "HTML5", score: "90%", color: "#ff6347" },
-  { name: "CSS", score: "80%", color: "#264de4" },
-  { name: "JavaScript", score: "75%", color: "#F0DB4F" },
-  { name: "NodeJS", score: "50%", color: "#3c873a" },
-  { name: "ReactJS", score: "75%", color: "#61dafb" },
-  { name: "Flutter", score: "70%",  color: "#027DFD"},
-  { name: "Styled-Components", score: "70%", color: "purple" },
-  { name: "PHP", score: "70%", color: "#4F5B93" },
-  { name: "MySQL", score: "50%", color: "#f59620" },
-  { name: "WordPress", score: "75%", color: "#21759b" },
-
+  { name: "Angular", score: "90%", color: "#ff6347" },
+  { name: "React", score: "80%", color: "#264de4" },
+  { name: "TypeScript", score: "90%", color: "#F0DB4F" },
+  { name: "C#", score: "75%", color: "#61dafb" },
+  { name: ".NET", score: "75%", color: "#21759b" },
+  { name: "MySQL", score: "90%", color: "#f59620" },
+  { name: "Flutter", score: "85%",  color: "#027DFD"},
+  { name: "SCSS", score: "90%", color: "purple" },
+  { name: "HTML", score: "90%", color: "#4F5B93" },
+  { name: "Azure DevOps", score: "90%", color: "#3c873a" },
 ];
 
 export const secondSliderSkill = [
@@ -53,6 +52,7 @@ export const secondSliderSkill = [
   { name: "Linux", score: "50%", color: "#2577b1" },
   { name: "MongoDB", score: "45%", color: "#00ED64" },
   { name: "NextJS", score: "50%", color: "#000" },
+  {name: "WordPress", score: "70%", color: "#21759b" },
 ];
 
 export default function AboutMe() {
@@ -66,11 +66,7 @@ export default function AboutMe() {
           <AboutMeTextContainer>
             <TitleAboutMe>Quem sou eu?</TitleAboutMe>
             <Text>
-              Me chamo Leonardo, tenho 21 anos, sou estudante de {" "}
-              Análise e Desenvolvimento de Sistemas e atualmente trabalho como <strong>Desenvolvedor Front-End</strong>.
-              Logo abaixo, você poderá ver alguns dos meus projetos e as respectivas
-              tecnologias utilizadas. Além disso, possuo nível de{" "}
-              <strong>inglês avançado</strong>.
+            Olá! Sou o Leonardo, tenho 21 anos e sou apaixonado por tecnologia. Estou cursando Análise e Desenvolvimento de Sistemas e atuo como <strong>Desenvolvedor Fullstack</strong>. No meu portfólio, você encontrará alguns dos projetos que mais me orgulho, junto com as tecnologias que utilizei para criá-los.
             </Text>
             <Text>
               Caso queira saber um pouco mais sobre mim, confira o meu currículo
@@ -84,7 +80,7 @@ export default function AboutMe() {
                 fontSizeMobile="0.9em"
                 widthMobileHover="100%"
                 target="blank"
-                href="https://drive.google.com/file/d/1LKcSWGk_Rk5GH8qMGbkKGS5zGrOizZKb/view?usp=sharing"
+                href="https://drive.google.com/file/d/1sA2SMjQmzftUSC3s1Cuw2xnxXGUHtk9R/view?usp=sharing"
               >
                 <RiFolderUserFill color="#fff" size={26} /> Meu currículo
               </ButtonLink>

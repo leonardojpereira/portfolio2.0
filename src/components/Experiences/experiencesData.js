@@ -23,9 +23,9 @@ export const experiences = [
         tecnologies: ['Angular', 'TypeScript', 'SCSS', '.NET', 'Git', 'Azure DevOps']
       },
       {
-        name: 'Concais S.A | Front-End Developer',
+        name: 'Concais S.A | Fullstack Developer',
         projectPeriod: 'Ago de 2024 - Nov 2024',
-        description: 'No projeto da Concais, atuei como desenvolvedor front-end, sendo responsável pelo desenvolvimento de todas as telas do sistema de gerenciamento de convidados. Minha principal tarefa foi garantir a integração das rotas do backend, assegurando a comunicação eficiente entre o front-end e a API. O sistema gerencia a entrada e saída de convidados dos navios atracados, proporcionando uma interface amigável e funcional para o usuário.',
+        description: 'No projeto da Concais, atuei como Desenvolvedor Fullstack, sendo responsável pelo desenvolvimento de todas as telas do sistema de gerenciamento de convidados. Minha principal tarefa foi garantir a integração das rotas do backend, assegurando a comunicação eficiente entre o front-end e a API. O sistema gerencia a entrada e saída de convidados dos navios atracados, proporcionando uma interface amigável e funcional para o usuário.',
         image: ConcaisImage,
         tecnologies: ['Angular' , 'TypeScript', 'SCSS', 'Git', 'Azure DevOps']
       },

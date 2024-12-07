@@ -31,7 +31,7 @@ export default function Home() {
             </header>
             <TextAboutMe>
               Sou <strong>Desenvolvedor de Software</strong> e esse é o meu
-              portfolio pessoal. Fique a vontade para explorá-lo!
+              portfolio pessoal. Fique a vontade para conhecer um pouco mais de mim! :)
             </TextAboutMe>
             <ButtonLink
               href="#aboutme"
