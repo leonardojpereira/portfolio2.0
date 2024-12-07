@@ -1,10 +1,10 @@
-import AgenciaTupiniquimImage from "../../images/logo-agencia-tupiniquim.png";
-import MgrImage from '../../images/logo-mgr.svg';
-import TKimage from '../../images/TimeKeeping-img.jpg';
-import BrasilExportImage from '../../images/brasil_export_logo.jpg';
-import ObraLeanImage from '../../images/obra_lean_logo.jpg';
-import WilsonSonsImage from '../../images/wilson_sons_logo.png';
-import ConcaisImage from '../../images/concais-logo.svg';
+import AgenciaTupiniquimImage from "../../assets/images/logo-agencia-tupiniquim.png";
+import MgrImage from '../../assets/images/logo-mgr.svg';
+import TKimage from '../../assets/images/TimeKeeping-img.jpg';
+import BrasilExportImage from '../../assets/images/brasil_export_logo.jpg';
+import ObraLeanImage from '../../assets/images/obra_lean_logo.jpg';
+import WilsonSonsImage from '../../assets/images/wilson_sons_logo.png';
+import ConcaisImage from '../../assets/images/concais-logo.svg';
 
 
 export const experiences = [

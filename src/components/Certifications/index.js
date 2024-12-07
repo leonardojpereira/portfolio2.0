@@ -11,18 +11,18 @@ import Title from '../Title';
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 
-import englishCertificate from '../../images/certificado_ingles.png';
-import frontendCertificate from '../../images/certificado_front-end.png';
-import databaseCertificate from '../../images/certificado_db.png';
-import reactCertificate from '../../images/certificado_react.jpg';
-import versionControlCertificate from '../../images/version_control_certified.jpg';
-import uxDesignCertificate from '../../images/ux_design.jpg';
-import dataFundamentalsCertificate from '../../images/data_fundamentals.jpg';
-import nodeCertificate from '../../images/nodejs.jpg';
-import marketingDigitalCertificate from '../../images/marketing_digital.jpg';
-import linuxCertificate from '../../images/linux.jpg';
-import flutterCertificate from '../../images/flutter_certified.jpg';
-import dartCertificate from '../../images/dart_certified.jpg';
+import englishCertificate from '../../assets/images/certificado_ingles.png';
+import frontendCertificate from '../../assets/images/certificado_front-end.png';
+import databaseCertificate from '../../assets/images/certificado_db.png';
+import reactCertificate from '../../assets/images/certificado_react.jpg';
+import versionControlCertificate from '../../assets/images/version_control_certified.jpg';
+import uxDesignCertificate from '../../assets/images/ux_design.jpg';
+import dataFundamentalsCertificate from '../../assets/images/data_fundamentals.jpg';
+import nodeCertificate from '../../assets/images/nodejs.jpg';
+import marketingDigitalCertificate from '../../assets/images/marketing_digital.jpg';
+import linuxCertificate from '../../assets/images/linux.jpg';
+import flutterCertificate from '../../assets/images/flutter_certified.jpg';
+import dartCertificate from '../../assets/images/dart_certified.jpg';
 
 const certificates = [
     {

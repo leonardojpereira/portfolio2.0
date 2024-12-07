@@ -1,4 +1,4 @@
-import ProfileImage from "../../images/profile.png";
+import ProfileImage from "../../assets/images/profile.png";
 import { ButtonLink } from "../Button/style";
 
 import {

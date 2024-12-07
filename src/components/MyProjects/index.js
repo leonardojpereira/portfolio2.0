@@ -4,6 +4,7 @@ import {
   MyProjectsSection,
   Container,
   ProjectContainer,
+  SeeMore,
   ProjectDisplay,
   ProjectInfo,
   ProjectVideo,
@@ -11,14 +12,13 @@ import {
   ProjectTitle,
   ProjectDescription,
   TechnologiesContainer,
+  GitHubLinks,
+  GitHubLink,
   Subtitle,
   StackContainer,
   Stack,
-  GitHubLinks,
   GitHubLinksContainer,
   GitHubLinkWithIcon,
-  GitHubLink,
-  SeeMore,
 } from "./style";
 import { ButtonLink } from "../Button/style";
 import { ProfileLink } from "../Footer/style";
@@ -26,19 +26,7 @@ import { BsFillChatTextFill } from "react-icons/bs";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import VideoProjectBrigaderia from "../../assets/media/rb_brigaderia_video.mp4";
 
-const MyProjects = () => {
-  const techStack = ["Angular 18", ".NET 8", "MySQL", "Git", "GitHub"];
-  const githubLinks = [
-    {
-      name: "Front-End",
-      url: "https://github.com/seu-usuario/front-end-repository",
-    },
-    {
-      name: "Back-End",
-      url: "https://github.com/seu-usuario/back-end-repository",
-    },
-  ];
-
+export default function MyProjects() {
   return (
     <MyProjectsSection id="projects">
       <Container data-aos="fade-up">
@@ -61,26 +49,36 @@ const MyProjects = () => {
             <TechnologiesContainer>
               <Subtitle>Tecnologias</Subtitle>
               <StackContainer>
-                {techStack.map((tech, index) => (
-                  <Stack key={index}>{tech}</Stack>
-                ))}
+                <Stack>Angular 18</Stack>
+                <Stack>.NET 8</Stack>
+                <Stack>MySQL</Stack>
+                <Stack>Git</Stack>
+                <Stack>GitHub</Stack>
               </StackContainer>
             </TechnologiesContainer>
             <GitHubLinks>
               <Subtitle>Repositórios</Subtitle>
               <GitHubLinksContainer>
-                {githubLinks.map(({ name, url }, index) => (
-                  <GitHubLinkWithIcon key={index}>
-                    <GitHubLink
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {name}
-                    </GitHubLink>
-                    <FaExternalLinkAlt />
-                  </GitHubLinkWithIcon>
-                ))}
+                <GitHubLinkWithIcon>
+                  <GitHubLink
+                    href="https://github.com/seu-usuario/front-end-repository"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Front-End
+                  </GitHubLink>
+                  <FaExternalLinkAlt />
+                </GitHubLinkWithIcon>
+                <GitHubLinkWithIcon>
+                  <GitHubLink
+                    href="https://github.com/seu-usuario/back-end-repository"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Back-End
+                  </GitHubLink>
+                  <FaExternalLinkAlt />
+                </GitHubLinkWithIcon>
               </GitHubLinksContainer>
             </GitHubLinks>
           </ProjectInfo>
@@ -110,7 +108,4 @@ const MyProjects = () => {
       </Container>
     </MyProjectsSection>
   );
-};
-
-export default MyProjects;
-// Compare this snippet from src/components/MyProjects/style.js:
+}
