@@ -103,7 +103,7 @@ export const ExperienceDetails = styled.div`
   border-top: 1px solid #ddd;
   padding: ${({ isOpen }) => (isOpen ? "20px 0" : "")};
   overflow: hidden;
-  max-height: ${({ isOpen }) => (isOpen ? "1500px" : "0")};
+  max-height: ${({ isOpen }) => (isOpen ? "1600px" : "0")};
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
   transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.5s ease;
 

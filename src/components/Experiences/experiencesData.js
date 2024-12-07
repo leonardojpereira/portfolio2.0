@@ -5,6 +5,7 @@ import BrasilExportImage from '../../assets/images/brasil_export_logo.jpg';
 import ObraLeanImage from '../../assets/images/obra_lean_logo.jpg';
 import WilsonSonsImage from '../../assets/images/wilson_sons_logo.png';
 import ConcaisImage from '../../assets/images/concais-logo.svg';
+import EcoportoImage from '../../assets/images/ecoporto_image.webp';
 
 
 export const experiences = [
@@ -15,11 +16,18 @@ export const experiences = [
     description: 'Desenvolvedor Front-End/Mobile', 
     projects: [
       {
+        name: 'Ecoporto | Fullstack Developer',
+        projectPeriod: 'Nov de 2024 - Atual',
+        description: 'Atuei com o desenvolvimento de funcionalidades no projeto OmniKeeper, inicialmente projetado para a empresa Ecoporto. Durante minha atuação no projeto, trabalhei com tecnologias como Angular e .NET para criar soluções robustas e eficientes, alinhadas às necessidades do negócio.',
+        image: EcoportoImage,
+        tecnologies: ['Angular', 'TypeScript', 'SCSS', '.NET', 'Git', 'Azure DevOps']
+      },
+      {
         name: 'Concais S.A | Front-End Developer',
-        projectPeriod: 'Ago de 2024 - Atual',
+        projectPeriod: 'Ago de 2024 - Nov 2024',
         description: 'No projeto da Concais, atuei como desenvolvedor front-end, sendo responsável pelo desenvolvimento de todas as telas do sistema de gerenciamento de convidados. Minha principal tarefa foi garantir a integração das rotas do backend, assegurando a comunicação eficiente entre o front-end e a API. O sistema gerencia a entrada e saída de convidados dos navios atracados, proporcionando uma interface amigável e funcional para o usuário.',
         image: ConcaisImage,
-        tecnologies: ['Angular' , 'TypeScript', 'HTML', 'CSS', 'Git', 'Azure DevOps']
+        tecnologies: ['Angular' , 'TypeScript', 'SCSS', 'Git', 'Azure DevOps']
       },
       {
         name: 'Wilson Sons | Mobile Developer',
@@ -40,7 +48,7 @@ export const experiences = [
         projectPeriod: 'Abr de 2024 - Ago 2024',
         description: 'Versão Mobile do TimeKeeping, desenvolvida em Flutter, para facilitar a gestão do tempo e proporcionar uma visão clara e detalhada das alocações de horas, permitindo uma administração mais precisa e informada dos recursos e das tarefas dentro da organização.',
         image: TKimage,
-        tecnologies: ['Angular' , 'TypeScript', 'HTML', 'CSS', 'Git', 'Azure DevOps']
+        tecnologies: ['Angular' , 'TypeScript', 'HTML', 'SCSS', 'Git', 'Azure DevOps']
       },
       {
         name: 'Fórum Brasil Export | Mobile Developer',
