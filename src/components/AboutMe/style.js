@@ -48,7 +48,7 @@ export const TitleAboutMe = styled.h3`
     border-radius: 12px;
     bottom: -16px;
     left: 0;
-    background-color: #0083ff;
+    background-color: rgb(255 138 0);
   }
 `;
 

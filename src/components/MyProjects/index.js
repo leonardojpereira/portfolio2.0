@@ -61,7 +61,7 @@ export default function MyProjects() {
               <GitHubLinksContainer>
                 <GitHubLinkWithIcon>
                   <GitHubLink
-                    href="https://github.com/seu-usuario/front-end-repository"
+                    href="https://github.com/leonardojpereira/rb-brigaderia-front"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -71,7 +71,7 @@ export default function MyProjects() {
                 </GitHubLinkWithIcon>
                 <GitHubLinkWithIcon>
                   <GitHubLink
-                    href="https://github.com/seu-usuario/back-end-repository"
+                    href="https://github.com/leonardojpereira/rb-brigaderia-api"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

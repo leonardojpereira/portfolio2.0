@@ -21,7 +21,7 @@ h2 {
 }
 
 strong {
-  color: rgb(0, 131, 255);
+  color: rgb(255 138 0);
 }
 `;
 

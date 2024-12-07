@@ -26,7 +26,7 @@ export const ProjectContainer = styled.div`
 export const ProjectDisplay = styled.div`
   width: 60%;
   border-radius: 16px;
-  border-right: 10px solid rgb(255, 138, 0);
+  border-right: 6px solid rgb(255, 138, 0);
 `;
 
 export const ProjectInfo = styled.div`
@@ -64,7 +64,7 @@ export const GitHubLinkWithIcon = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255, 138, 0, 0.7);
+  color: rgb(255 138 0);
 
   &:hover {
     text-decoration: underline;
@@ -111,7 +111,7 @@ export const GitHubLinks = styled.div`
 `;
 
 export const GitHubLink = styled.a`
-  color: rgba(255, 138, 0, 0.7);
+  color: rgb(255 138 0);
   text-decoration: none;
   font-size: 16px;
 
