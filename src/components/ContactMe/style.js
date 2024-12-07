@@ -131,7 +131,7 @@ export const InputButton = styled.button`
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
-    background-color: ${props => props.backgroundColor || '#0083ff'};
+    background-color: ${props => props.backgroundColor || 'rgb(255 138 0)'};
     padding: 1em 2.35em 1em 2.35em;
     font-size: 1.1em;
     max-width: 24em;

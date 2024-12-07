@@ -23,7 +23,7 @@ import {
   ProjectTecnologiesContainer,
   Stack,
   ListTecnologies,
-  TitleTecnology,
+  TitleTecnology
 } from "./styles";
 import { FaArrowUp } from "react-icons/fa";
 

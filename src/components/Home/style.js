@@ -41,7 +41,7 @@ export const ImageFit = styled.div`
   width: 20em;
   height: 20em;
   margin: 0;
-  background-color: #0083ff;
+  background-color: rgb(255 138 0);
   @media screen and (max-width: 540px) {
     width: 17em;
   height: 17em;

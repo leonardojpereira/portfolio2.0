@@ -23,6 +23,6 @@ export const ProfileLink = styled.a`
     font-style: italic;
     transition: .3s ease;
     &:hover {
-        color: rgb(0, 131, 255);
+        color: rgb(255 138 0);
     }
 `;

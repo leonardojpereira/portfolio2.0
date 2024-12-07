@@ -22,7 +22,7 @@ export const After = styled.div`
   width: 30px;
   height: 3px;
   border-radius: 12px;
-  background-color: #0083ff;
+  background-color: rgb(255 138 0);
 `;
 
 const rotate = keyframes`
@@ -37,7 +37,7 @@ const rotate = keyframes`
 export const Square = styled.div`
   width: 15px;
   height: 15px;
-  background-color: #0083ff;
+  background-color: rgb(255 138 0);
   animation: ${rotate} 2s infinite;
 `;
 
@@ -45,5 +45,5 @@ export const SecondAfter = styled.div`
   width: 30px;
   height: 3px;
   border-radius: 12px;
-  background-color: #0083ff;
+  background-color: rgb(255 138 0);
 `;

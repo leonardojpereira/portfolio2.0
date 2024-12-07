@@ -15,7 +15,7 @@ export const ButtonLink = styled.a`
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #0083ff;
+  background-color: rgb(255 138 0);
   height: ${props => props.height || '50px'};
   font-size: ${props => props.fontSize || '1.1em'};
   width: ${props => props.width || '14em'};
