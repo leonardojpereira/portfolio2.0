@@ -21,12 +21,20 @@ export const ProjectContainer = styled.div`
   background-color: rgb(40, 40, 40);
   border-radius: 14px;
   margin: 22px 0;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProjectDisplay = styled.div`
   width: 60%;
   border-radius: 16px;
   border-right: 6px solid rgb(255, 138, 0);
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectInfo = styled.div`
@@ -37,6 +45,10 @@ export const ProjectInfo = styled.div`
   width: 40%;
   gap: 12px;
   padding: 22px;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -85,6 +97,7 @@ export const StackContainer = styled.ul`
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 `;
 
 export const Stack = styled.li`

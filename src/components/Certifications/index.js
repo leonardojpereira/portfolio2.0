@@ -17,14 +17,35 @@ import databaseCertificate from '../../assets/images/certificado_db.png';
 import reactCertificate from '../../assets/images/certificado_react.jpg';
 import versionControlCertificate from '../../assets/images/version_control_certified.jpg';
 import uxDesignCertificate from '../../assets/images/ux_design.jpg';
-import dataFundamentalsCertificate from '../../assets/images/data_fundamentals.jpg';
-import nodeCertificate from '../../assets/images/nodejs.jpg';
-import marketingDigitalCertificate from '../../assets/images/marketing_digital.jpg';
+import AngularCertificate from '../../assets/images/angular_certified.jpg';
+import Angular14Certificate from '../../assets/images/angular14_certified.jpg';
+import DotnetCertificate from '../../assets/images/dotnet_certified.jpg';
+import SqlCertificate from '../../assets/images/sql_certified.jpg';
 import linuxCertificate from '../../assets/images/linux.jpg';
 import flutterCertificate from '../../assets/images/flutter_certified.jpg';
-import dartCertificate from '../../assets/images/dart_certified.jpg';
+import JasmineCertified from '../../assets/images/jasmine_certified.png';
 
 const certificates = [
+    {
+        image: AngularCertificate,
+        alt: 'Angular Certificate'
+    },
+    {
+        image: Angular14Certificate,
+        alt: 'Angular 14 Certificate'
+    },
+    {
+        image: JasmineCertified,
+        alt: 'Jasmine Certificate'
+    },
+    {
+        image: DotnetCertificate,
+        alt: 'Dotnet Certificate'
+    },
+    {
+        image: SqlCertificate,
+        alt: 'Sql Certificate'
+    },
     {
         image: englishCertificate,
         alt: 'English Certificate'
@@ -50,28 +71,12 @@ const certificates = [
         alt: 'UX Design Certificate'
     },
     {
-        image: dataFundamentalsCertificate,
-        alt: 'Data Fundamentals Certificate'
-    },
-    {
-        image: nodeCertificate,
-        alt: 'Node.js Certificate'
-    },
-    {
-        image: marketingDigitalCertificate,
-        alt: 'Digital Marketing Certificate'
-    },
-    {
         image: linuxCertificate,
         alt: 'Linux Certificate'
     },
     {
         image: flutterCertificate,
         alt: 'Flutter Certificate'
-    },
-    {
-        image: dartCertificate,
-        alt: 'Dart Certificate'
     },
 ];
 
@@ -100,7 +105,7 @@ export default function Certification() {
 
     return (
         <section id='certification'>
-            <div className="container" data-aos="fade-up">
+            <div className="container">
                 <Title children="Certificações" />
                 <Swiper
                     effect={'coverflow'}

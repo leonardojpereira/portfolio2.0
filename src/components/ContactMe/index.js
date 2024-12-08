@@ -13,7 +13,7 @@ export default function ContactMe() {
 
     return (
         <ContactMeSection id="contact">
-            <Container data-aos="fade-up">
+            <Container>
                 <Header>
                     <Title>Contate-me!</Title>
                     <Subtitle>Fique a vontade para me mandar uma mensagem :)</Subtitle>

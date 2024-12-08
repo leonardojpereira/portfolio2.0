@@ -29,7 +29,7 @@ import VideoProjectBrigaderia from "../../assets/media/rb_brigaderia_video.mp4";
 export default function MyProjects() {
   return (
     <MyProjectsSection id="projects">
-      <Container data-aos="fade-up">
+      <Container>
         <Title children="Projetos" />
         <ProjectContainer>
           <ProjectDisplay>

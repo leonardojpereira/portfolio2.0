@@ -38,20 +38,20 @@ export const firstSliderSkill = [
   { name: "MySQL", score: "90%", color: "#f59620" },
   { name: "Flutter", score: "85%",  color: "#027DFD"},
   { name: "SCSS", score: "90%", color: "purple" },
-  { name: "HTML", score: "90%", color: "#4F5B93" },
+  { name: "Jasmine", score: "70%", color: "#4F5B93" },
   { name: "Azure DevOps", score: "90%", color: "#3c873a" },
 ];
 
 export const secondSliderSkill = [
   { name: "SASS", score: "60%", color: "#cc6699" },
-  { name: "REST API", score: "75%", color: "cyan" },
+  { name: "Scrum", score: "80%", color: "cyan" },
   { name: "Git", score: "80%", color: "#f34f29" },
   { name: "BootStrap", score: "60%", color: "#9461fb" },
   { name: "TailwindCSS", score: "50%", color: "#38bdf8" },
   { name: "React Native", score: "65%", color: "#61dafb" },
-  { name: "Linux", score: "50%", color: "#2577b1" },
-  { name: "MongoDB", score: "45%", color: "#00ED64" },
-  { name: "NextJS", score: "50%", color: "#000" },
+  { name: "Linux", score: "60%", color: "#2577b1" },
+  { name: "HTML", score: "90%", color: "#00ED64" },
+  { name: "NodeRed", score: "70%", color: "#000" },
   {name: "WordPress", score: "70%", color: "#21759b" },
 ];
 
