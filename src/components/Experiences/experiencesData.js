@@ -13,7 +13,7 @@ export const experiences = [
     logo: MgrImage,
     title: 'ModalGR',
     period: 'Janeiro de 2024 - Atual',
-    description: 'Desenvolvedor Front-End/Mobile', 
+    description: 'Desenvolvedor Fullstack', 
     projects: [
       {
         name: 'Ecoporto | Fullstack Developer',
